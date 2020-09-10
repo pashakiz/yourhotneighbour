@@ -1,0 +1,130 @@
+$container-xxl:             1260px;
+$container-xxxl:            1374px;
+$body_bg_color:             #F1ECE9;
+$logo_main_color:           #D3B7D6;
+$btn_bg_color:              #D3B7D6;
+$btn_hover_bg_color:        #D8A8DD;
+$btn2_bg_color:             #D8A8DD;
+$btn2_hover_bg_color:       #C796CC;
+$bg_dark_1:                 #D3B7D6;
+/**/$bg_light_1:                #F2CFCF;
+$font_color:                #262835;
+$font_family:               "CeraPro", sans-serif;
+$font_weight:               400;
+$font_size:                 18px;
+$font_size_mobile:          15px;
+$body_mb:                   140px;
+$body_mb_mob:               100px;
+$font_family2:              "RozhaOne", serif;;
+$link_txt_family:           $font_family;
+/**/$link_color:                #828282;
+/**/$link_hover_color:          #555555;
+$link2_color:               $font_color;
+$link2_hover_color:         $btn_hover_bg_color;
+$link3_color:               #fff;
+$link3_hover_color:         $logo_main_color;
+$footer_height:             101px;
+$footer_height_mob:         249px;
+$footer_text_color:         #ffffff;
+$footer_text_color_hover:   #F2EAF3;
+
+//Form
+$input_bg:                  #E8E3DE;
+$input_hover_bg:            #fff;
+$input_txt_family:          $font_family;
+$input_txt_color:           $font_color;
+$input_hover_txt_color:     $input_txt_color;
+$input_placeholder_color:   $font_color;
+$input_border:              none;
+$input_hover_border:        none;
+$input_border_radius:       100px;
+$textarea_border_radius:    32px;
+
+//Custom Checkbox
+$checkbox_xs_padding_left:      48px;
+$checkbox_xs_width:             27px;
+$checkbox_xs_height:            27px;
+$checkbox_xs_left:              -47px;
+$checkbox_xs_top:               -3px;
+
+$checkbox_padding_left:         60px;
+$checkbox_width:                34px;
+$checkbox_height:               34px;
+$checkbox_left:                 -59px;
+$checkbox_top:                  -6px;
+
+$checkbox_txt_family:           $font_family2;
+$checkbox_txt_xs_size:          13px;
+$checkbox_txt_size:             17px;
+$checkbox_txt_xs_lh:            1.2;
+$checkbox_txt_lh:               1.2;
+$checkbox_bg_color:             #fff;
+$checkbox_checked_bg_color:     $checkbox_bg_color;
+$checkbox_border:               2px solid #EEEEEE;
+$checkbox_checked_border_color: #F2CFCF;
+$checkbox_active_bg_color:      #F2CFCF;
+$checkbox_bg_icon:              "data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 64 64' enable-background='new 0 0 64 64' xml:space='preserve'%3E%3Cg%3E%3Cpath fill='%23FF6699' d='M23.5,54.9c0,0-0.1,0-0.1,0c-1.4,0-2.8-0.6-3.7-1.7l-18.3-20c-1.9-2.1-1.8-5.4,0.3-7.4 c2.1-2,5.4-1.8,7.4,0.3l14.6,16l31.4-31.4c2-2,5.3-2,7.4,0c2,2,2,5.3,0,7.4L27.2,53.4C26.2,54.3,24.9,54.9,23.5,54.9z'/%3E%3C/g%3E%3C/svg%3E%0A";
+
+//Custom RadioButton
+$radio_xs_padding_left:      48px;
+$radio_xs_width:             33px;
+$radio_xs_height:            33px;
+$radio_xs_marker_width:      21px;
+$radio_xs_marker_height:     21px;
+$radio_xs_left:              -47px;
+$radio_xs_top:               -6px;
+$radio_xs_marker_left:       -41px;
+$radio_xs_marker_top:        0px;
+
+$radio_padding_left:         67px;
+$radio_width:                47px;
+$radio_height:               47px;
+$radio_marker_width:         31px;
+$radio_marker_height:        31px;
+$radio_left:                 -59px; //>12
+$radio_top:                  -6px;
+$radio_marker_left:          -51px; //>12
+$radio_marker_top:           2px;
+
+$radio_txt_family:           $font_family;
+$radio_txt_color:            $font_color;
+$radio_txt_xs_size:          16px;
+$radio_txt_size:             20px;
+$radio_txt_xs_lh:            1.2;
+$radio_txt_lh:               1.2;
+$radio_bg_color:             $input_bg;
+$radio_checked_bg_color:     $btn_bg_color;
+$radio_border:               1px solid $input_bg;
+$radio_hover_border:         1px solid $input_bg;
+$radio_checked_border_color: $btn_bg_color;
+$radio_active_bg_color:      $body_bg_color;
+$radio_bg_icon:              "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='4' fill='%23F2CFCF'/%3E%3C/svg%3E";
+
+//Custom Switch
+$switch_bg_width: 101px;
+$switch_bg_height: 47px;
+$switch_bg_width_mob: 71px;
+$switch_bg_height_mob: 33px;
+$switch_dot_size: 31px;
+$switch_dot_size_mob: 21px;
+$switch_bg_color: $input_bg;
+$switch_bg_color_active: $btn_hover_bg_color;
+$switch_bg_color_checked: $btn_bg_color;
+$switch_dot_color: #EEE9E6;
+$switch_dot_color_active: $switch_dot_color;
+$switch_border: $body_bg_color solid 1px;
+$switch_border_active: $body_bg_color solid 1px;
+$switch_txt: 'On\00a0\00a0\00a0\00a0\00a0\00a0Off';
+$switch_txt_color: $font_color;
+$switch_txt_color_checked: #EEE9E6;
+$switch_margin_right: 32px;
+
+//Bootstrap container width
+@function get-container-width($key: 'md') {
+  @return map-get($container-max-widths, $key);
+}
+
+//User List page wider
+$user_list_wider:           160px;
+$user_list_item_breakpoint: 992px;
+$user_list_title_color:     $font_color;

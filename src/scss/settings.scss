@@ -1,0 +1,43 @@
+.settings-form {
+  padding-top: 13px;
+  @media (min-width: 768px) {
+    padding-top: 74px;
+  }
+}
+.settings-photo {
+  margin: 0 auto;
+  max-width: 291px;
+  @media (min-width: 768px) {
+    max-width: 621px;
+  }
+}
+
+.profile-photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 291px;
+  max-width: 291px;
+  height: 291px;
+  max-height: 291px;
+  overflow: hidden;
+  background-color: $input_bg;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  @media (min-width: 768px) {
+    height: 621px;
+    max-height: 621px;
+    width: 621px;
+    max-width: 621px;
+  }
+}
+
+.subscription {
+  width: 100%;
+  margin: 0 auto;
+  @media (min-width: 576px) {
+    max-width: 620px;
+  }
+}

@@ -1,0 +1,342 @@
+body {
+  font-family: $font_family;
+  font-weight: $font_weight;
+  font-size: $font_size_mobile;
+  color: $font_color;
+  background-color: $body_bg_color;
+  line-height: 1.5;
+  @media (min-width: 768px) {
+    font-size: $font_size;
+  }
+}
+.container {
+  @media (min-width: 1500px) {
+    max-width: $container-xxl + $grid-gutter-width;
+  }
+  @media (min-width: 1920px) {
+    max-width: $container-xxxl + $grid-gutter-width;
+  }
+  &.container_index-content {
+    @media (min-width: 1500px) {
+      max-width: 1400px;
+    }
+    @media (min-width: 1920px) {
+      max-width: 1700px;
+    }
+  }
+  &.container_firstscreen {
+    @media (min-width: 1920px) {
+      max-width: 1547px;
+    }
+  }
+  &.container_header {
+    @media (min-width: 1200px) {
+      max-width: 100%;
+    }
+  }
+  &.container_profile {
+    position: relative;
+    @media (min-width: 1500px) {
+      max-width: 1410px;
+    }
+  }
+  &.container_index {
+    @media (min-width: 1920px) {
+      max-width: 1535px;
+    }
+  }
+  &.container_slider {
+    padding-right: 0;
+    padding-left: 0;
+    @media (min-width: 576px) {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
+}
+.content {
+  @media (min-width: 992px) {
+    padding: 50px 0 0;
+  }
+  @media (min-width: 1200px) {
+    padding: 74px 48px 20px;
+  }
+  @media (min-width: 1920px) {
+    padding: 74px 148px 20px;
+  }
+}
+h1 {
+  font-family: $font_family2;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px;
+  color: $font_color;
+  margin-bottom: 24px;
+  text-align: center;
+  @media (min-width: 768px) {
+    font-size: 50px;
+    line-height: 65px;
+  }
+  @media (min-width: 992px) {
+    font-size: 80px;
+    line-height: 110px;
+    text-align: left;
+  }
+  &.h1_index {
+    padding-top: 47px;
+    text-align: center;
+    @media (min-width: 1200px) {
+      padding-top: 120px;
+      text-align: left;
+    }
+  }
+}
+h2 {
+  font-family: $font_family2;
+  font-size: 25px;
+  line-height: 49px;
+  color: $font_color;
+  text-align: center;
+  margin-bottom: 45px;
+  @media (min-width: 768px) {
+    font-size: 64px;
+    line-height: 75px;
+    margin-bottom: 80px;
+  }
+  &.h2_login {
+    text-align: left;
+    font-size: 33px;
+    color: $input_bg;
+    @media (min-width: 768px) {
+      font-size: 64px;
+      line-height: 75px;
+      margin-bottom: 80px;
+    }
+    @media (min-width: 1200px) {
+      color: $font_color;
+      font-size: 46px;
+      line-height: 54px;
+      margin-bottom: 52px;
+    }
+    @media (min-width: 1200px) {
+      font-size: 54px;
+      line-height: 60px;
+      margin-bottom: 45px;
+    }
+    @media (min-width: 1920px) {
+      font-size: 64px;
+      line-height: 75px;
+      margin-bottom: 80px;
+    }
+  }
+}
+h3 {
+  font-family: $font_family2;
+  font-size: 19px;
+  line-height: 24px;
+  color: $font_color;
+  margin-top: 50px;
+  margin-bottom: 17px;
+  @media (min-width: 768px) {
+    font-size: 30px;
+    margin-top: 80px;
+    margin-bottom: 28px;
+  }
+}
+p {
+  line-height: 32px;
+  margin-bottom: 1.5rem;
+  @media (min-width: 768px) {
+    line-height: 39px;
+  }
+  b {
+    &.bmark {
+      font-weight: bold;
+      font-family: $font_family2;
+      @media (min-width: 768px) {
+        font-size: 22px;
+      }
+    }
+  }
+}
+a {
+  color: $link_color;
+  text-decoration: none;
+  &:hover {
+    color: $link_hover_color;
+    text-decoration: none;
+  }
+}
+.link1 {
+  font-family: $link_txt_family;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 15px;
+  line-height: 20px;
+  @media (min-width: 768px) {
+    & {
+      font-size: 23px;
+      line-height: 31px;
+    }
+  }
+}
+.link2 {
+  font-family: $font_family;
+  color: $link2_color;
+  font-weight: 400;
+  font-size: 16px;
+  &:hover {
+    color: $link2_hover_color;
+  }
+  @media (min-width: 768px) {
+    font-size: 20px;
+  }
+}
+.link3 {
+  font-family: $link_txt_family;
+  font-weight: 400;
+  font-size: 16px;
+  color: $link3_color;
+  &:hover {
+    color: $link3_hover_color;
+  }
+  @media (min-width: 1200px) {
+    font-size: 20px;
+    color: $font_color;
+    &:hover {
+      color: $btn_hover_bg_color;
+    }
+  }
+}
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: $body_bg_color;
+  z-index: 999;
+  transition: 0.5s all;
+  opacity: 1;
+  visibility: visible;
+  .loader {
+    width: 50px;
+    height: 50px;
+    background-image: url('../img/icons/loader.svg');
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: 1s spin infinite linear;
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
+  &.done {
+    opacity: 0;
+    visibility: hidden;
+  }
+  @keyframes spin {
+    from {
+      width: 50px;
+      height: 50px;
+    }
+    to {
+      width: 75px;
+      height: 75px;
+    }
+  }
+}
+
+.sticky-footer {
+  position: relative;
+  min-height: 100%;
+  body {
+    margin-bottom: $body_mb_mob + $footer_height_mob;
+    .main {
+      //padding-top: 60px;
+    }
+    .footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: $footer_height_mob;
+    }
+    @media (min-width: 992px) {
+      margin-bottom: $body_mb + $footer_height;
+      .footer {
+        height: $footer_height;
+      }
+      &.no-push-bottom {
+        margin-bottom: $footer_height;
+      }
+    }
+  }
+}
+
+.secondscreen {}
+
+.index-content {
+  font-size: 16px;
+  padding-bottom: 10px;
+  @media (min-width: 768px) {
+    font-size: $font_size;
+  }
+  @media (min-width: 1200px) {
+    max-width: 674px;
+  }
+}
+
+.index-content__title {
+  font-family: $font_family2;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 39px;
+  color: $font_color;
+  margin-bottom: 28px;
+  @media (min-width: 1200px) {
+    font-size: 35px;
+    line-height: 39px;
+    margin-bottom: 56px;
+  }
+}
+
+.collage {
+  overflow: hidden;
+  margin-bottom: 58px;
+}
+
+.collage__img_xs {
+  display: block;
+  width: 200%;
+  position: relative;
+  left: -11%;
+  @media (min-width: 768px) {
+    width: 71%;
+    position: static;
+    margin: 0 auto;
+  }
+  @media (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.collage__img_lg {
+  display: none;
+  @media (min-width: 1200px) {
+    display: block;
+    position: relative;
+    margin-top: 285px;
+    width: 425px;
+    height: auto;
+    margin-left: -100px;
+  }
+  @media (min-width: 1500px) {
+    width: 725px;
+    margin-left: -315px;
+    margin-top: 85px;
+  }
+  @media (min-width: 1920px) {
+    width: 998px;
+    margin-left: -460px;
+  }
+}

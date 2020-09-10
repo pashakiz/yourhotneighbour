@@ -1,0 +1,87 @@
+<%= _.template(require('./../includes/header.html'))() %>
+<main class="main">
+    <div class="container">
+        <div class="content">
+            <form action="">
+                <div class="row">
+                    <div class="col">
+                        <div class="settings-photo">
+                            <div class="form-group">
+                                <div class="profile-photo">
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" id="customFile">
+                                        <label class="custom-file-area d-flex align-items-center justify-content-center" for="customFile">
+                                            <span class="btn btn_4 btn_w100">Change photo</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="settings-form">
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <div class="form-group form-group_input">
+                                        <input class="form-control" type="text" placeholder="Full Name">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <div class="form-group form-group_input">
+                                        <input class="form-control" type="text" placeholder="Last Name">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <div class="form-group form-group_input">
+                                        <input class="form-control" type="text" placeholder="Age">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <div class="form-group form-group_check">
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadioInline1">Male</label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadioInline2">Female</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group form-group_input">
+                                        <textarea class="form-control" placeholder="About"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <div class="form-group form-group_check">
+                                        <div class="custom-control custom-switch custom-switch_inline">
+                                            <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                            <label class="custom-control-label" for="customSwitch1">
+                                                <div class="custom-control-label-separator"></div>
+                                                Notify me of site updates
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <div class="form-group">
+                                        <button class="btn btn_w100">SAVE PREFERENCES</button>
+                                    </div>
+                                    <div class="form-group form-group_30up text-center">
+                                        <a href="#" class="link2">Sign Out</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</main>
+<%= _.template(require('./../includes/footer.html'))() %>

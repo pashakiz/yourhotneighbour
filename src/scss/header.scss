@@ -80,7 +80,10 @@
   }
 }
 .header_page {
-  margin-bottom: 55px;
+  margin-bottom: 20px;
+  @media (min-width: 768px) {
+    margin-bottom: 61px;
+  }
   @media (min-width: 992px) {
     margin-bottom: 90px;
   }
@@ -90,7 +93,7 @@
 }
 
 .header__row {
-  padding: 24px 0 0;
+  padding: 22px 0 0;
   @media (min-width: 992px) {
     padding: 74px 0 0;
   }
@@ -105,14 +108,14 @@
   }
   &.header__row_main {
     @media (min-width: 1200px) {
-      padding: 24px 0 0;
+      padding: 22px 0 0;
       margin-bottom: 45px;
     }
     @media (min-width: 1350px) {
-      padding: 24px 0 0;
+      padding: 22px 0 0;
     }
     @media (min-width: 1400px) {
-      padding: 24px 0 0;
+      padding: 22px 0 0;
     }
     @media (min-width: 1500px) {
       padding: 71px 0 0;

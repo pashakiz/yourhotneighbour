@@ -1,21 +1,22 @@
-/**/$container-xxl:             1260px;
-/**/$container-xxxl:            1374px;
-/**/$body_bg_color:             #F1ECE9;
+$container-xxl:             1427px;
+$container-xxxl:            1640px;
+$body_bg_color:             #FFF7EB;
 /**/$logo_main_color:           #D3B7D6;
-/**/$btn_bg_color:              #D3B7D6;
-/**/$btn_hover_bg_color:        #D8A8DD;
+$btn_bg_color:              #FF445A;
+$btn_hover_bg_color:        #EA2F45;
 /**/$btn2_bg_color:             #D8A8DD;
 /**/$btn2_hover_bg_color:       #C796CC;
-/**/$bg_dark_1:                 #D3B7D6;
+$bg_dark_1:                 #F5EEE4;
 /**/$bg_light_1:                #F2CFCF;
 /**/$font_color:                #262835;
-/**/$font_family:               "CeraPro", sans-serif;
-/**/$font_weight:               400;
-/**/$font_size:                 18px;
-/**/$font_size_mobile:          15px;
+$font_family:               "MessinaSans", sans-serif;
+$font_weight:               300;
+$font_size:                 19px;
+$font_size_mobile:          16px;
 /**/$body_mb:                   140px;
 /**/$body_mb_mob:               100px;
-/**/$font_family2:              "RozhaOne", serif;;
+$font_family2:              "IvyMode", serif;
+/*?*/$font_family3:              "Love", serif;
 /**/$link_txt_family:           $font_family;
 /**/$link_color:                #828282;
 /**/$link_hover_color:          #555555;
@@ -23,10 +24,10 @@
 /**/$link2_hover_color:         $btn_hover_bg_color;
 /**/$link3_color:               #fff;
 /**/$link3_hover_color:         $logo_main_color;
-/**/$footer_height:             101px;
-/**/$footer_height_mob:         249px;
-/**/$footer_text_color:         #ffffff;
-/**/$footer_text_color_hover:   #F2EAF3;
+$footer_height:             111px;
+$footer_height_mob:         236px;
+$footer_text_color:         #FFF7EB;
+$footer_text_color_hover:   rgba(255,247,235,0.7);
 
 //Form
 /**/$input_bg:                  #E8E3DE;

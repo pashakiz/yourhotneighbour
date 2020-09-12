@@ -91,7 +91,7 @@ h2 {
   font-weight: 200;
   font-size: 27px;
   line-height: 44px;
-  color: #272727;
+  color: $input_txt_color;
   text-align: left;
   margin-bottom: 38px;
   margin-top: 41px;
@@ -141,7 +141,7 @@ h2 {
 h3 {
   font-family: $font_family2;
   font-weight: 300;
-  color: #272727;
+  color: $input_txt_color;
   font-size: 17px;
   line-height: 24px;
   margin-top: 55px;
@@ -193,15 +193,18 @@ a {
   }
 }
 .link2 {
-  font-family: $font_family;
+  font-family: $font_family3;
   color: $link2_color;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 31px;
+  line-height: 45px;
   &:hover {
     color: $link2_hover_color;
+    opacity: 0.75;
   }
   @media (min-width: 768px) {
-    font-size: 20px;
+    font-size: 45px;
+    line-height: 85px;
   }
 }
 .link3 {

@@ -24,15 +24,15 @@ body textarea:required:valid {
 
 }
 .form-control {
-  border: none;
+  border: $input_border;
   background-color: $input_bg;
   border-radius: $input_border_radius;
-  padding: 21px 25px;
+  padding: 22px 27px 19px;
   color: $input_txt_color;
   font-family: $input_txt_family;
-  font-size: $checkbox_txt_xs_size;
-  line-height: $checkbox_txt_xs_lh;
-  font-weight: 400;
+  font-size: $input_txt_xs_size;
+  line-height: $input_txt_xs_lh;
+  font-weight: 200;
   &:hover {
     background-color: $input_hover_bg;
     color: $input_hover_txt_color;
@@ -47,8 +47,9 @@ body textarea:required:valid {
     opacity: 0.6;
   }
   @media (min-width: 768px) {
-    padding: 30px 44px;
-    font-size: 20px;
+    padding: 26px 44px 25px;
+    font-size: $input_txt_size;
+    line-height: $input_txt_lh;
   }
   &.form-control_header {
     text-align: center;
@@ -67,9 +68,9 @@ body textarea:required:valid {
   }
 }
 input.form-control {
-  height: 62px;
+  height: 60px;
   @media (min-width: 768px) {
-    height: 85px;
+    height: 76px;
   }
   @media (min-width: 1200px) {
     &.form-control_header {
@@ -84,9 +85,9 @@ input.form-control {
 }
 textarea.form-control {
   border-radius: $textarea_border_radius;
-  min-height: 110px;
+  min-height: 187px;
   @media (min-width: 768px) {
-    height: 156px;
+    height: 240px;
   }
 }
 .form-group_20 {
@@ -141,17 +142,22 @@ textarea.form-control {
   }
 }
 .form-group_input {
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   @media (min-width: 768px) {
-    margin-bottom: 43px;
+    margin-bottom: 38px;
   }
 }
 .form-group_check {
-  padding: 4px 0;
-  margin-bottom: 20px;
+  padding: 0;
+  margin: 26px 0;
   @media (min-width: 768px) {
-    padding: 19px 0;
-    margin-bottom: 43px;
+    margin: 52px 0;
+  }
+}
+.form-group_settings-btn {
+  margin-bottom: 19px;
+  @media (min-width: 768px) {
+    margin-bottom: 25px;
   }
 }
 .form-group_swicher {
@@ -177,7 +183,7 @@ textarea.form-control {
   .custom-control-label {
     color: $checkbox_txt_color;
     font-family: $checkbox_txt_family;
-    font-weight: 300;
+    font-weight: 200;
     line-height: 20px;
     font-size: $checkbox_txt_xs_size;
     cursor: pointer;
@@ -270,7 +276,7 @@ textarea.form-control {
   .custom-control-label {
     color: $radio_txt_color;
     font-family: $radio_txt_family;
-    font-weight: 400;
+    font-weight: 200;
     font-size: $radio_txt_xs_size;
     line-height: $radio_txt_xs_lh;
     cursor: pointer;
@@ -282,7 +288,7 @@ textarea.form-control {
       background-color: $radio_bg_color;
       border: $radio_border !important;
       outline: none !important;
-      border-radius: 100%;
+      border-radius: 0;
     }
     &::after {
       top: $radio_xs_marker_top;
@@ -290,7 +296,7 @@ textarea.form-control {
       width: $radio_xs_marker_width;
       height: $radio_xs_marker_height;
       outline: none !important;
-      border-radius: 100%;
+      border-radius: 0;
       background: no-repeat 50% / 50% 50%;
     }
     @media (min-width: 992px) {
@@ -315,7 +321,7 @@ textarea.form-control {
     &:checked {
       ~.custom-control-label {
         &::after {
-          background-color: $body_bg_color;
+          background-color: $btn_bg_color;
           background-image: none;
         }
         &::before {
@@ -334,11 +340,11 @@ textarea.form-control {
     &:active {
       ~.custom-control-label {
         &::before {
-          background-color: $btn_hover_bg_color;
-          border: 1px solid $btn_hover_bg_color !important;
+          background-color: $radio_active_bg_color;
+          border: $radio_border !important;
         }
         &::after {
-          background-color: $radio_active_bg_color;
+          //background-color: $radio_active_bg_color;
         }
       }
     }
@@ -354,11 +360,11 @@ textarea.form-control {
 
 .custom-file {
   display: block;
-  width: 177px;
+  width: 116px;
   height: auto;
   margin: 0 auto;
   @media (min-width: 768px) {
-    width: 378px;
+    width: 170px;
   }
   .custom-file-input {
     width: 100%;
@@ -380,35 +386,29 @@ textarea.form-control {
 
 .btn {
   width: 100%;
+  height: 62px;
+  padding: 20px 21px;
   border-radius: 0;
-  padding: 20px 88px 20px 21px;
   font-family: $font_family3;
   font-size: 20px;
   color: #fff;
   background-color: $btn_bg_color;
   position: relative;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   line-height: 1;
-  &::before {
+  &::after {
+    display: block;
     content: '';
-    width: 17px;
-    height: 14px;
+    width: 62px;
+    height: 62px;
+    background-color: inherit;
     background-image: url('../img/icons/icon-arrow.svg');
     background-repeat: no-repeat;
     background-position: 50%;
+    background-size: 30%;
     position: absolute;
-    right: 22px;
-    top: 50%;
-    margin-top: -7px;
-  }
-  &::after {
-    content: '';
-    width: 9px;
-    background-color: $body_bg_color;
-    position: absolute;
-    right: 61px;
-    top: -2px;
-    bottom: -2px;
+    right: -72px;
+    top: -1px;
   }
   &:hover {
     color: #fff;
@@ -420,20 +420,17 @@ textarea.form-control {
   }
   @media (min-width: 768px) {
     width: auto;
+    letter-spacing: 3px;
   }
   @media (min-width: 992px) {
     width: auto;
     font-size: 30px;
-    padding: 31px 147px 31px 40px;
-    &::before {
-      width: 26px;
-      height: 21px;
-      right: 35px;
-      margin-top: -10px;
-    }
+    padding: 31px 40px;
+    height: 94px;
     &::after {
-      width: 10px;
-      right: 96px;
+      width: 94px;
+      height: 94px;
+      right: -105px;
     }
   }
   &.btn_1 {
@@ -452,27 +449,36 @@ textarea.form-control {
     }
   }
   &.btn_2 {
+    &:hover {
+      color: #fff;
+    }
+  }
+  &.btn_3 {
+    padding: 12px 21px 10px;
     background-color: $btn2_bg_color;
+    font-size: 17px;
+    height: 40px;
+    color: $input_txt_color;
+    &::before, &::after {
+      display: none;
+    }
     &:hover {
       color: #fff;
       background-color: $btn2_hover_bg_color;
     }
-  }
-  &.btn_4 {
-    color: $font_color;
-    font-size: 12px;
-    font-family: $font_family2;
-    padding: 9px 1.3rem 10px;
-    background-color: rgba(255,255,255,0.81);
-    &:hover {
-      background-color: #FFFFFF;
-    }
-    @media (min-width: 768px) {
-      font-size: 26px;
-      padding: 20px 2.5rem 19px;
+    @media (min-width: 992px) {
+      padding: 21px 21px 20px;
+      font-size: 25px;
+      height: 68px;
     }
   }
   &.btn_w100 {
+    width: calc(100% - 71px);
+    @media (min-width: 992px) {
+      width: calc(100% - 104px);
+    }
+  }
+  &.btn_w100i {
     width: 100%;
   }
 }

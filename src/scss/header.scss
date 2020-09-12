@@ -3,7 +3,7 @@
     border: 1px solid #CEC8BF;
     display: inline-block;
     border-radius: 0;
-    color: #272727;
+    color: $input_txt_color;
     font-size: 13px;
     font-family: $font_family2;
     font-weight: 400;
@@ -164,10 +164,11 @@
     font-family: $font_family2;
     font-weight: 300;
     font-size: 16px;
-    color: #272727;
+    color: $input_txt_color;
     text-decoration: none;
     word-break: break-all;
     text-transform: uppercase;
+    letter-spacing: 1px;
     @media (min-width: 992px) {
       font-size: 25px;
     }
@@ -203,10 +204,11 @@
   font-family: $font_family2;
   font-weight: 300;
   font-size: 16px;
-  color: #272727;
+  color: $input_txt_color;
   text-decoration: none;
   word-break: break-all;
   text-transform: uppercase;
+  letter-spacing: 1px;
   padding-right: 12px;
   @media (min-width: 768px) {
     font-size: 25px;

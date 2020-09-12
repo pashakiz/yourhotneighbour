@@ -16,7 +16,7 @@ $font_size_mobile:          16px;
 /**/$body_mb:                   140px;
 /**/$body_mb_mob:               100px;
 $font_family2:              "IvyMode", serif;
-/*?*/$font_family3:              "Love", serif;
+$font_family3:              "Love", serif;
 /**/$link_txt_family:           $font_family;
 /**/$link_color:                #828282;
 /**/$link_hover_color:          #555555;
@@ -42,29 +42,30 @@ $footer_text_color_hover:   rgba(255,247,235,0.7);
 /**/$textarea_border_radius:    32px;
 
 //Custom Checkbox
-/**/$checkbox_xs_padding_left:      48px;
-/**/$checkbox_xs_width:             27px;
-/**/$checkbox_xs_height:            27px;
-/**/$checkbox_xs_left:              -47px;
-/**/$checkbox_xs_top:               -3px;
+$checkbox_xs_padding_left:      45px;
+$checkbox_xs_width:             24px;
+$checkbox_xs_height:            24px;
+$checkbox_xs_left:              -45px;
+$checkbox_xs_top:               -2px;
 
-/**/$checkbox_padding_left:         60px;
-/**/$checkbox_width:                34px;
-/**/$checkbox_height:               34px;
-/**/$checkbox_left:                 -59px;
-/**/$checkbox_top:                  -6px;
+$checkbox_padding_left:         58px;
+$checkbox_width:                31px;
+$checkbox_height:               31px;
+$checkbox_left:                 -58px;
+$checkbox_top:                  2px;
 
-/**/$checkbox_txt_family:           $font_family2;
-/**/$checkbox_txt_xs_size:          13px;
-/**/$checkbox_txt_size:             17px;
-/**/$checkbox_txt_xs_lh:            1.2;
-/**/$checkbox_txt_lh:               1.2;
-/**/$checkbox_bg_color:             #fff;
-/**/$checkbox_checked_bg_color:     $checkbox_bg_color;
-/**/$checkbox_border:               2px solid #EEEEEE;
-/**/$checkbox_checked_border_color: #F2CFCF;
-/**/$checkbox_active_bg_color:      #F2CFCF;
-/**/$checkbox_bg_icon:              "data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 64 64' enable-background='new 0 0 64 64' xml:space='preserve'%3E%3Cg%3E%3Cpath fill='%23FF6699' d='M23.5,54.9c0,0-0.1,0-0.1,0c-1.4,0-2.8-0.6-3.7-1.7l-18.3-20c-1.9-2.1-1.8-5.4,0.3-7.4 c2.1-2,5.4-1.8,7.4,0.3l14.6,16l31.4-31.4c2-2,5.3-2,7.4,0c2,2,2,5.3,0,7.4L27.2,53.4C26.2,54.3,24.9,54.9,23.5,54.9z'/%3E%3C/g%3E%3C/svg%3E%0A";
+$checkbox_txt_family:           $font_family;
+$checkbox_txt_color:            #272727;
+$checkbox_txt_xs_size:          16px;
+$checkbox_txt_size:             21px;
+$checkbox_txt_xs_lh:            32px;
+$checkbox_txt_lh:               36px;
+$checkbox_bg_color:             $body_bg_color;
+$checkbox_checked_bg_color:     $checkbox_bg_color;
+$checkbox_border:               1px solid #CFC9C0;
+$checkbox_checked_border_color: #F2CFCF;
+$checkbox_active_bg_color:      #F2CFCF;
+$checkbox_bg_icon:              "data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 64 64' enable-background='new 0 0 64 64' xml:space='preserve'%3E%3Cg%3E%3Cpath fill='%23FF445A' d='M23.5,54.9c0,0-0.1,0-0.1,0c-1.4,0-2.8-0.6-3.7-1.7l-18.3-20c-1.9-2.1-1.8-5.4,0.3-7.4 c2.1-2,5.4-1.8,7.4,0.3l14.6,16l31.4-31.4c2-2,5.3-2,7.4,0c2,2,2,5.3,0,7.4L27.2,53.4C26.2,54.3,24.9,54.9,23.5,54.9z'/%3E%3C/g%3E%3C/svg%3E%0A";
 
 //Custom RadioButton
 /**/$radio_xs_padding_left:      48px;
@@ -100,25 +101,6 @@ $footer_text_color_hover:   rgba(255,247,235,0.7);
 /**/$radio_checked_border_color: $btn_bg_color;
 /**/$radio_active_bg_color:      $body_bg_color;
 /**/$radio_bg_icon:              "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='4' fill='%23F2CFCF'/%3E%3C/svg%3E";
-
-//Custom Switch
-/**/$switch_bg_width: 101px;
-/**/$switch_bg_height: 47px;
-/**/$switch_bg_width_mob: 71px;
-/**/$switch_bg_height_mob: 33px;
-/**/$switch_dot_size: 31px;
-/**/$switch_dot_size_mob: 21px;
-/**/$switch_bg_color: $input_bg;
-/**/$switch_bg_color_active: $btn_hover_bg_color;
-/**/$switch_bg_color_checked: $btn_bg_color;
-/**/$switch_dot_color: #EEE9E6;
-/**/$switch_dot_color_active: $switch_dot_color;
-/**/$switch_border: $body_bg_color solid 1px;
-/**/$switch_border_active: $body_bg_color solid 1px;
-/**/$switch_txt: 'On\00a0\00a0\00a0\00a0\00a0\00a0Off';
-/**/$switch_txt_color: $font_color;
-/**/$switch_txt_color_checked: #EEE9E6;
-/**/$switch_margin_right: 32px;
 
 //Bootstrap container width
 @function get-container-width($key: 'md') {

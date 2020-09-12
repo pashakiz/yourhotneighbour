@@ -1,47 +1,51 @@
 <%= _.template(require('./../includes/header.html'))() %>
 <main class="main">
     <div class="container">
-        <div class="content">
-            <div class="subscription">
-                <h2>Your Subscription</h2>
+        <div class="row">
+            <div class="col-12 col-xl-4">
+                <h2>Your <br class="d-none d-xl-inline">Subscriptions</h2>
+            </div>
+            <div class="col-12 col-xl-6">
                 <form action="">
                     <div class="form-group form-group_swicher">
-                        <div class="custom-control custom-switch">
-                            <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
-                            <label class="custom-control-label" for="customSwitch1">
-                                <div class="custom-control-label-separator"></div>
-                                We have created a unique combination system that consists of three main factors that produce similarity of thought and productive connections: Life, freedom and culture.
-                            </label>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1">We have created a unique combination system that consists of three main factors that produce similarity of thought and productive connections: Life, freedom and culture.</label>
                         </div>
                     </div>
                     <div class="form-group form-group_swicher">
-                        <div class="custom-control custom-switch">
-                            <input type="checkbox" class="custom-control-input" id="customSwitch2">
-                            <label class="custom-control-label" for="customSwitch2">
-                                <div class="custom-control-label-separator"></div>
-                                We have created a unique combination system that consists of three main factors that produce similarity of thought and productive connections: Life, freedom and culture.
-                            </label>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck2" checked>
+                            <label class="custom-control-label" for="customCheck2">We have created a unique combination system that consists of three main factors that produce similarity of thought and productive connections: Life, freedom and culture.</label>
                         </div>
                     </div>
                     <div class="form-group form-group_swicher">
-                        <div class="custom-control custom-switch">
-                            <input type="checkbox" class="custom-control-input" id="customSwitch3" checked>
-                            <label class="custom-control-label" for="customSwitch3">
-                                <div class="custom-control-label-separator"></div>
-                                We have created a unique combination system that consists of three main factors that produce similarity of thought and productive connections: Life, freedom and culture.
-                            </label>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck3">
+                            <label class="custom-control-label" for="customCheck3">We have created a unique combination system that consists of three main factors that produce similarity of thought and productive connections: Life, freedom and culture.</label>
                         </div>
                     </div>
                     <div class="form-group form-group_swicher">
-                        <div class="custom-control custom-switch custom-control_noborder">
-                            <input type="checkbox" class="custom-control-input" id="customSwitch4">
-                            <label class="custom-control-label" for="customSwitch4">
-                                <div class="custom-control-label-separator"></div>
-                                We have created a unique combination system that consists of three main factors that produce similarity of thought and productive connections: Life, freedom and culture.
-                            </label>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck4" checked>
+                            <label class="custom-control-label" for="customCheck4">We have created a unique combination system that consists of three main factors that produce similarity of thought and productive connections: Life, freedom and culture.</label>
                         </div>
                     </div>
-                    <button class="btn btn_w100">Save preferences</button>
+                    <div class="form-group form-group_swicher">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck5">
+                            <label class="custom-control-label" for="customCheck5">We have created a unique combination system that consists of three main factors that produce similarity of thought and productive connections: Life, freedom and culture.</label>
+                        </div>
+                    </div>
+                    <div class="form-group form-group_swicher">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck6" checked>
+                            <label class="custom-control-label" for="customCheck6">We have created a unique combination system that consists of three main factors that produce similarity of thought and productive connections: Life, freedom and culture.</label>
+                        </div>
+                    </div>
+                    <div class="form-group form-group_btn-unsuscr">
+                        <button class="btn btn_w100">Save preferences</button>
+                    </div>
                 </form>
             </div>
         </div>

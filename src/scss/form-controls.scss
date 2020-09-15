@@ -434,18 +434,27 @@ textarea.form-control {
     }
   }
   &.btn_1 {
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
+      width: 100%;
+      font-size: 20px;
+      padding: 20px 21px;
+      height: 62px;
+      &::after {
+        width: 62px;
+        height: 62px;
+        right: -72px;
+      }
+    }
+    @media (min-width: 1920px) {
       width: auto;
-      font-size: 26px;
-      padding: 1.75rem 53px;
-    }
-    @media (min-width: 1200px) {
-      font-size: 22px;
-      padding: 1.125rem 1.3rem;
-    }
-    @media (min-width: 1500px) {
-      font-size: 26px;
-      padding: 1.75rem 53px;
+      font-size: 30px;
+      padding: 31px 40px;
+      height: 94px;
+      &::after {
+        width: 94px;
+        height: 94px;
+        right: -105px;
+      }
     }
   }
   &.btn_2 {

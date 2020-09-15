@@ -16,17 +16,9 @@ body {
   @media (min-width: 1920px) {
     max-width: $container-xxxl + $grid-gutter-width;
   }
-  &.container_index-content {
-    @media (min-width: 1500px) {
-      max-width: 1400px;
-    }
-    @media (min-width: 1920px) {
-      max-width: 1700px;
-    }
-  }
   &.container_firstscreen {
     @media (min-width: 1920px) {
-      max-width: 1547px;
+      max-width: 1670px;
     }
   }
   &.container_profile {
@@ -62,20 +54,36 @@ body {
 }
 h1 {
   font-family: $font_family2;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 40px;
-  color: $font_color;
-  margin-bottom: 24px;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 71px;
+  color: #fff;
+  margin-bottom: 45px;
   text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
   @media (min-width: 768px) {
-    font-size: 50px;
-    line-height: 65px;
+    //font-size: 50px;
+    //line-height: 65px;
   }
-  @media (min-width: 992px) {
-    font-size: 80px;
-    line-height: 110px;
+  @media (min-width: 1200px) {
+    font-weight: 200;
+    color: $link2_color;
+    font-size: 36px;
+    line-height: 60px;
+    margin-bottom: 26px;
     text-align: left;
+    letter-spacing: 3px;
+  }
+  @media (min-width: 1500px) {
+    font-size: 48px;
+    line-height: 80px;
+    margin-bottom: 38px;
+  }
+  @media (min-width: 1920px) {
+    font-size: 48px;
+    line-height: 80px;
+    margin-bottom: 38px;
   }
   &.h1_index {
     padding-top: 47px;
@@ -291,67 +299,29 @@ a {
 .secondscreen {}
 
 .index-content {
-  font-size: 16px;
-  padding-bottom: 10px;
-  @media (min-width: 768px) {
-    font-size: $font_size;
-  }
   @media (min-width: 1200px) {
-    max-width: 674px;
+    padding: 0 70px ;
+  }
+  p {
+    line-height: 32px;
+    @media (min-width: 1200px) {
+      font-size: 18px;
+      line-height: 40px;
+    }
   }
 }
 
 .index-content__title {
   font-family: $font_family2;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 39px;
-  color: $font_color;
-  margin-bottom: 28px;
+  font-weight: 200;
+  font-size: 28px;
+  line-height: 42px;
+  color: $link2_color;
+  margin-bottom: 33px;
+  text-align: left;
   @media (min-width: 1200px) {
-    font-size: 35px;
-    line-height: 39px;
-    margin-bottom: 56px;
-  }
-}
-
-.collage {
-  overflow: hidden;
-  margin-bottom: 58px;
-}
-
-.collage__img_xs {
-  display: block;
-  width: 200%;
-  position: relative;
-  left: -11%;
-  @media (min-width: 768px) {
-    width: 71%;
-    position: static;
-    margin: 0 auto;
-  }
-  @media (min-width: 1200px) {
-    display: none;
-  }
-}
-
-.collage__img_lg {
-  display: none;
-  @media (min-width: 1200px) {
-    display: block;
-    position: relative;
-    margin-top: 285px;
-    width: 425px;
-    height: auto;
-    margin-left: -100px;
-  }
-  @media (min-width: 1500px) {
-    width: 725px;
-    margin-left: -315px;
-    margin-top: 85px;
-  }
-  @media (min-width: 1920px) {
-    width: 998px;
-    margin-left: -460px;
+    font-size: 52px;
+    line-height: 66px;
+    margin-bottom: 79px;
   }
 }

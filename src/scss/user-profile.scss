@@ -82,332 +82,98 @@
 }
 
 .compatibility {
-  @media (min-width: 768px) {
-    &.compatibility_mb {
-      margin-bottom: 70px;
+  &.compatibility_mb {
+    padding-bottom: 47px;
+    @media (min-width: 992px) {
+      padding-bottom: 40px;
+    }
+    @media (min-width: 1920px) {
+      padding-bottom: 60px;
     }
   }
   .compatibility__chart {
     +.compatibility__chart {
-      margin-left: 40px;
-      @media (min-width: 768px) {
-        margin-left: 56px;
-      }
-    }
-  }
-  .compatibility__chart {
-    +.compatibility__chart {
-      margin-left: 5px;
-      @media (min-width: $user_list_item_breakpoint) {
-        margin-left: 32px;
+      margin-left: 28px;
+      @media (min-width: 992px) {
+        margin-left: 60px;
       }
     }
   }
   .compatibility__progress {
-    width: 22px;
-    height: 22px;
+    width: 60px;
+    height: 20px;
     margin: auto;
     @media (min-width: 992px) {
-      width: 50px;
-      height: 50px;
+      width: 96px;
+      height: 31px;
+    }
+    svg {
+      vertical-align: top;
     }
   }
   .compatibility__title {
+    font-family: $font_family2;
+    color: $font_color2;
     font-weight: 400;
-    color: rgba(255,255,255,0.5);
-    margin-top: 4px;
-    font-size: 8px;
-    text-align: center;
-    @media (min-width: $user_list_item_breakpoint) {
-      margin-top: 12px;
-      font-size: 18px;
+    font-size: 16px;
+    margin-top: 14px;
+    @media (min-width: 992px) {
+      text-align: left;
+      font-size: 24px;
+      margin-top: 27px;
     }
   }
-  &.compatibility_mb {
-    margin-bottom: 66px;
-  }
-  &.compatibility_profile {
-    .compatibility__progress {
-      width: 50px;
-      height: 50px;
-      margin: auto;
-      @media (min-width: 768px) {
-        width: 36px;
-        height: 36px;
-      }
-      @media (min-width: $user_list_item_breakpoint) {
-        width: 36px;
-        height: 36px;
-      }
-      @media (min-width: 1200px) {
-        width: 65px;
-        height: 65px;
-      }
-      @media (min-width: 1500px) {
-        width: 80px;
-        height: 80px;
-      }
-    }
+  &.compatibility_list {
     .compatibility__title {
-      font-size: 16px;
-      margin-top: 14px;
-      color: rgba(255,255,255,0.5);
-      @media (min-width: 768px) {
-        margin-top: 7px;
-        font-size: 9px;
-      }
+      font-size: 9px;
+      margin-top: 6px;
       @media (min-width: $user_list_item_breakpoint) {
-        margin-top: 8px;
-        font-size: 9px;
-      }
-      @media (min-width: 1200px) {
-        margin-top: 13px;
+        margin-top: 24px;
         font-size: 18px;
       }
-      @media (min-width: 1500px) {
-        margin-top: 19px;
-        font-size: 22px;
+    }
+    .compatibility__progress {
+      width: 32px;
+      height: 12px;
+      margin: auto;
+      @media (min-width: 992px) {
+        width: 71px;
+        height: 23px;
       }
     }
     .compatibility__chart {
       +.compatibility__chart {
-        margin-left: 32px;
-        @media (min-width: 768px) {
-          margin-left: 30px;
-        }
+        margin-left: 9px;
         @media (min-width: $user_list_item_breakpoint) {
-          margin-left: 32px;
-        }
-        @media (min-width: 1200px) {
-          margin-left: 60px;
-        }
-        @media (min-width: 1500px) {
-          margin-left: 80px;
+          margin-left: 18px;
         }
       }
     }
   }
-}
 
-.user-list-item {
-  &.user-list-item_profile {
-    position: relative;
-    left: -15px;
-    right: -15px;
-    margin-top: -174px;
-    width: calc(100% + 30px);
-    border-radius: 20px;
-    margin-bottom: 54px;
-    @media (min-width: 768px) {
-      position: static;
-      margin: 0 auto 60px;
-      width: 690px;
-      border-radius: 500px;
-    }
-    @media (min-width: $user_list_item_breakpoint) {
-      width: 690px;
-    }
-    @media (min-width: 1200px) {
-      width: 1110px;
-      margin-bottom: 100px;
-    }
-    @media (min-width: 1500px) {
-      width: 1380px;
-    }
-    .user-list-item__pic {
-      display: none;
-      @media (min-width: 768px) {
-        display: block;
-        width: 310px;
-        max-width: 310px;
-        min-width: 310px;
-        max-height: 310px;
-        border: 22px solid $body_bg_color;
-        margin: 0 0 0 -22px;
-      }
+  &.compatibility_login {
+    .compatibility__title {
+      margin-top: 8px;
+      font-size: 12px;
       @media (min-width: $user_list_item_breakpoint) {
-        width: 310px;
-        max-width: 310px;
-        min-width: 310px;
-        max-height: 310px;
-        border: 22px solid $body_bg_color;
-      }
-      @media (min-width: 1200px) {
-        width: 500px;
-        max-width: 500px;
-        min-width: 500px;
-        max-height: 500px;
-        border: 35px solid $body_bg_color;
-        margin: 0 0 0 -35px;
-      }
-      @media (min-width: 1500px) {
-        width: 620px;
-        max-width: 620px;
-        min-width: 620px;
-        max-height: 620px;
-        border: 44px solid $body_bg_color;
-        margin: 0 0 0 -44px;
-      }
-      .user-list-item__img {
-        @media (min-width: 768px) {
-          height: 310px;
-        }
-        @media (min-width: $user_list_item_breakpoint) {
-          height: 310px;
-        }
-        @media (min-width: 1200px) {
-          height: 500px;
-        }
-        @media (min-width: 1500px) {
-          height: 620px;
-        }
-      }
-      .user-list-item__btn {
-        @media (min-width: 768px) {
-          width: 189px;
-          bottom: -230px;
-          padding: 10px 2.5rem;
-          height: 38px;
-          font-size: 13px;
-          line-height: 1.5;
-        }
-        @media (min-width: $user_list_item_breakpoint) {
-          width: 189px;
-          bottom: -230px;
-          padding: 10px 2.5rem;
-          height: 38px;
-          font-size: 13px;
-        }
-        @media (min-width: 1200px) {
-          width: 304px;
-          bottom: -372px;
-          padding: 17px 2.5rem;
-          height: 61px;
-          font-size: 20px;
-        }
-        @media (min-width: 1500px) {
-          width: 378px;
-          bottom: -460px;
-          padding: 20px 2.5rem;
-          height: 76px;
-          font-size: 26px;
-        }
-      }
-    }
-    .user-list-item__mob-btn {
-      position: absolute;
-      top: 108px;
-      z-index: 50;
-      width: 100%;
-      text-align: center;
-      @media (min-width: 768px) {
-        position: static;
-        display: none;
-      }
-      .user-list-item__btn-mob {
-        width: 256px;
-        padding: 12px 2.5rem;
-        height: 50px;
+        margin-top: 13px;
         font-size: 18px;
-        line-height: 1.5;
       }
     }
-    .user-list-item__inf {
-      width: 100%;
-      padding: 212px 23px 39px;
-      height: auto;
-      max-height: none;
-      @media (min-width: 768px) {
-        padding: 58px 40px 50px;
-        max-width: 285px;
+    .compatibility__progress {
+      width: 37px;
+      height: 37px;
+      margin: auto;
+      @media (min-width: 992px) {
+        width: 71px;
+        height: 23px;
       }
-      @media (min-width: $user_list_item_breakpoint) {
-        padding: 58px 40px 50px;
-        height: auto;
-        max-height: none;
-        max-width: 285px;
-      }
-      @media (min-width: 1200px) {
-        padding: 89px 63px 72px;
-        max-width: 480px;
-      }
-      @media (min-width: 1500px) {
-        padding: 110px 79px 90px;
-        max-width: 608px;
-      }
-      .user-list-item__title {
-        text-align: center;
-        margin-bottom: 31px;
-        @media (min-width: 768px) {
-          text-align: left;
-          margin-bottom: 25px;
-        }
+    }
+    .compatibility__chart {
+      +.compatibility__chart {
+        margin-left: 15px;
         @media (min-width: $user_list_item_breakpoint) {
-          margin-bottom: 28px;
-        }
-        @media (min-width: 1200px) {
-          margin-bottom: 41px;
-        }
-        @media (min-width: 1500px) {
-          margin-bottom: 51px;
-        }
-        .user-list-item__name {
-          font-size: 25px;
-          margin-bottom: 4px;
-          color: #fff;
-          @media (min-width: 768px) {
-            font-size: 19px;
-            margin-bottom: 5px;
-          }
-          @media (min-width: $user_list_item_breakpoint) {
-            font-size: 20px;
-            margin-bottom: 6px;
-          }
-          @media (min-width: 1200px) {
-            font-size: 32px;
-            margin-bottom: 8px;
-          }
-          @media (min-width: 1500px) {
-            font-size: 40px;
-            margin-bottom: 10px;
-          }
-        }
-        .user-list-item__loc {
-          font-size: 16px;
-          @media (min-width: 768px) {
-            font-size: 9px;
-          }
-          @media (min-width: $user_list_item_breakpoint) {
-            font-size: 9px;
-          }
-          @media (min-width: 1200px) {
-            font-size: 18px;
-          }
-          @media (min-width: 1500px) {
-            font-size: 22px;
-          }
-        }
-      }
-      .compatibility-title {
-        font-size: 19px;
-        margin-bottom: 20px;
-        text-align: center;
-        @media (min-width: 768px) {
-          font-size: 15px;
-          margin-bottom: 12px;
-          text-align: left;
-        }
-        @media (min-width: $user_list_item_breakpoint) {
-          font-size: 15px;
-          margin-bottom: 14px;
-        }
-        @media (min-width: 1200px) {
-          font-size: 26px;
-          margin-bottom: 22px;
-        }
-        @media (min-width: 1500px) {
-          font-size: 33px;
-          margin-bottom: 26px;
+          margin-left: 18px;
         }
       }
     }
@@ -440,6 +206,68 @@
       text-align: center;
       font-size: 40px;
       margin-bottom: 52px;
+    }
+  }
+}
+
+.bg-wave {
+  width: 100%;
+  &::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 30px;
+    background-image: url('../img/bg/bg-list-top.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top left;
+    position: relative;
+    bottom: -1px;
+    margin-bottom: -22px;
+    @media (min-width: 768px) {
+      height: 80px;
+    }
+    @media (min-width: 992px) {
+      height: 130px;
+      margin-bottom: -125px;
+    }
+    @media (min-width: 1200px) {
+      height: 216px;
+      margin-bottom: -210px;
+    }
+  }
+  .bg-wave__inner {
+    background-color: $bg_light_1;
+  }
+  &.bg-wave_after::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-image: url('../img/bg/bg-list-bottom.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom left;
+    position: relative;
+    top: -1px;
+    @media (min-width: 768px) {
+      height: 10px;
+    }
+    @media (min-width: 992px) {
+      height: 15px;
+    }
+    @media (min-width: 1200px) {
+      height: 37px;
+    }
+  }
+  &.bg-wave_userlist {
+    margin-bottom: 60px;
+    @media (min-width: 992px) {
+      margin-bottom: 100px;
+    }
+    @media (min-width: 1200px) {
+      margin-top: 80px;
+      margin-bottom: 125px;
     }
   }
 }

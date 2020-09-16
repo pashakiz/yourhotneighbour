@@ -275,6 +275,9 @@ a {
   min-height: 100%;
   body {
     margin-bottom: $body_mb_mob + $footer_height_mob;
+    &.no-push-bottom {
+      margin-bottom: $footer_height_mob;
+    }
     .main {
       //padding-top: 60px;
     }

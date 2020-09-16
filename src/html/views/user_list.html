@@ -1,300 +1,336 @@
-<%= _.template(require('./../includes/header.html'))() %>
+<%= _.template(require('./../includes/header-no-margin.html'))() %>
 <div id="page-preloader" class="preloader">
     <div class="loader"></div>
 </div>
 <main class="main">
     <div class="container">
-        <h2>Choose your one</h2>
-        <div class="user-list">
-            <div class="user-list-item">
-                <div class="user-list-item__pic">
-                    <div class="user-list-item__img" style="background-image: url('img/photos/user-01.jpg');">
-                        <a class="user-list-item__btn btn btn_2" href="#">Claim Her</a>
-                    </div>
-                </div>
-                <div class="user-list-item__inf">
-                    <div class="user-list-item__title">
-                        <div class="user-list-item__name">Jennifer, 24</div>
-                        <div class="user-list-item__loc">New York (1000 km)</div>
-                    </div>
-                    <div class="compatibility-title">Compatibility score: 15 000</div>
-                    <div class="compatibility compatibility_list d-flex justify-content-sm-center justify-content-lg-start">
-                        <div class="compatibility__chart">
-                            <div class="compatibility__progress">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="img-fluid" width="80.36" height="79.746" viewBox="0 0 80.36 79.746">
-                                    <g transform="translate(-9.318 39.873) rotate(-45)">
-                                        <path fill="#f1ece9" transform="translate(55.54 13.611)" d="M12.691,10.115A35.747,35.747,0,0,0,7.55,0L0,7.837A25.391,25.391,0,0,1,.3,34.5l7.579,7.867h0a35.791,35.791,0,0,0,4.976-10.174,36.828,36.828,0,0,0,1.6-11.047A36.8,36.8,0,0,0,12.691,10.115Z"/>
-                                        <path fill="#dcc6df" transform="translate(13.612 55.243)" d="M7.83.3,0,7.846H0a35.705,35.705,0,0,0,10.357,5.222A36.8,36.8,0,0,0,21.65,14.756a36.738,36.738,0,0,0,11.27-1.844A35.629,35.629,0,0,0,43.211,7.534L35.4,0A25.486,25.486,0,0,1,7.83.3Z"/>
-                                        <path fill="#dcc6df" transform="translate(0 13.177)" d="M14.754,7.811,7.223,0A35.569,35.569,0,0,0,1.846,10.29a36.9,36.9,0,0,0-.158,22.561,35.732,35.732,0,0,0,5.22,10.357h0l7.55-7.83A25.489,25.489,0,0,1,14.754,7.811Z"/>
-                                        <path fill="#dcc6df" transform="translate(14.026 0)" d="M7.865,14.157h0a25.394,25.394,0,0,1,26.658.3l7.836-7.55a35.708,35.708,0,0,0-10.115-5.14A36.972,36.972,0,0,0,10.174,1.6,35.757,35.757,0,0,0,0,6.58l7.865,7.577Z"/>
-                                    </g>
-                                </svg>
+        <h2 class="text-md-center">Choose your one</h2>
+    </div>
+    <div class="bg-wave bg-wave_after bg-wave_userlist">
+        <div class="bg-wave__inner">
+            <div class="container">
+                <div class="user-list">
+                    <div class="user-list-item">
+                        <div class="user-list-item__pic">
+                            <div class="user-list-item__img" style="background-image: url('img/photos/user-01.jpg');">
+                                <a class="user-list-item__btn btn btn_2" href="#">claim her</a>
                             </div>
-                            <div class="compatibility__title">Interests</div>
                         </div>
-                        <div class="compatibility__chart">
-                            <div class="compatibility__progress">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="img-fluid" width="80.36" height="79.746" viewBox="0 0 80.36 79.746">
-                                    <g transform="translate(-9.318 39.873) rotate(-45)">
-                                        <path fill="#f1ece9" transform="translate(55.54 13.611)" d="M12.691,10.115A35.747,35.747,0,0,0,7.55,0L0,7.837A25.391,25.391,0,0,1,.3,34.5l7.579,7.867h0a35.791,35.791,0,0,0,4.976-10.174,36.828,36.828,0,0,0,1.6-11.047A36.8,36.8,0,0,0,12.691,10.115Z"/>
-                                        <path fill="#f1ece9" transform="translate(13.612 55.243)" d="M7.83.3,0,7.846H0a35.705,35.705,0,0,0,10.357,5.222A36.8,36.8,0,0,0,21.65,14.756a36.738,36.738,0,0,0,11.27-1.844A35.629,35.629,0,0,0,43.211,7.534L35.4,0A25.486,25.486,0,0,1,7.83.3Z"/>
-                                        <path fill="#dcc6df" transform="translate(0 13.177)" d="M14.754,7.811,7.223,0A35.569,35.569,0,0,0,1.846,10.29a36.9,36.9,0,0,0-.158,22.561,35.732,35.732,0,0,0,5.22,10.357h0l7.55-7.83A25.489,25.489,0,0,1,14.754,7.811Z"/>
-                                        <path fill="#dcc6df" transform="translate(14.026 0)" d="M7.865,14.157h0a25.394,25.394,0,0,1,26.658.3l7.836-7.55a35.708,35.708,0,0,0-10.115-5.14A36.972,36.972,0,0,0,10.174,1.6,35.757,35.757,0,0,0,0,6.58l7.865,7.577Z"/>
-                                    </g>
-                                </svg>
+                        <div class="user-list-item__inf">
+                            <div class="user-list-item__title">
+                                <div class="user-list-item__name">Elizabeth, 32</div>
+                                <div class="user-list-item__loc">Tokio (5000 km)</div>
                             </div>
-                            <div class="compatibility__title">Location</div>
-                        </div>
-                        <div class="compatibility__chart">
-                            <div class="compatibility__progress">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="img-fluid" width="80.36" height="79.746" viewBox="0 0 80.36 79.746">
-                                    <g transform="translate(-9.318 39.873) rotate(-45)">
-                                        <path fill="#f1ece9" transform="translate(55.54 13.611)" d="M12.691,10.115A35.747,35.747,0,0,0,7.55,0L0,7.837A25.391,25.391,0,0,1,.3,34.5l7.579,7.867h0a35.791,35.791,0,0,0,4.976-10.174,36.828,36.828,0,0,0,1.6-11.047A36.8,36.8,0,0,0,12.691,10.115Z"/>
-                                        <path fill="#f1ece9" transform="translate(13.612 55.243)" d="M7.83.3,0,7.846H0a35.705,35.705,0,0,0,10.357,5.222A36.8,36.8,0,0,0,21.65,14.756a36.738,36.738,0,0,0,11.27-1.844A35.629,35.629,0,0,0,43.211,7.534L35.4,0A25.486,25.486,0,0,1,7.83.3Z"/>
-                                        <path fill="#f1ece9" transform="translate(0 13.177)" d="M14.754,7.811,7.223,0A35.569,35.569,0,0,0,1.846,10.29a36.9,36.9,0,0,0-.158,22.561,35.732,35.732,0,0,0,5.22,10.357h0l7.55-7.83A25.489,25.489,0,0,1,14.754,7.811Z"/>
-                                        <path fill="#dcc6df" transform="translate(14.026 0)" d="M7.865,14.157h0a25.394,25.394,0,0,1,26.658.3l7.836-7.55a35.708,35.708,0,0,0-10.115-5.14A36.972,36.972,0,0,0,10.174,1.6,35.757,35.757,0,0,0,0,6.58l7.865,7.577Z"/>
-                                    </g>
-                                </svg>
+                            <div class="compatibility-title">Compatibility score: 15 000</div>
+                            <div class="compatibility compatibility_list d-flex justify-content-between">
+                                <div class="compatibility__chart">
+                                    <div class="compatibility__progress">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="img-fluid w-100" width="71" height="23" viewBox="0 0 71 23">
+                                            <g transform="translate(-279 -837)">
+                                                <rect width="17" height="17" rx="2" transform="translate(279 840)" fill="#ff445a"/>
+                                                <g transform="translate(302 839)" fill="none" stroke="#c7c2ba" stroke-width="1">
+                                                    <rect width="19" height="19" rx="2" stroke="none"/>
+                                                    <rect x="0.5" y="0.5" width="18" height="18" rx="1.5" fill="none"/>
+                                                </g>
+                                                <g transform="translate(327 837)" fill="none" stroke="#c7c2ba" stroke-width="1">
+                                                    <rect width="23" height="23" rx="2" stroke="none"/>
+                                                    <rect x="0.5" y="0.5" width="22" height="22" rx="1.5" fill="none"/>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="compatibility__title">Interests</div>
+                                </div>
+                                <div class="compatibility__chart">
+                                    <div class="compatibility__progress">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="img-fluid w-100" width="71" height="23" viewBox="0 0 71 23">
+                                            <g transform="translate(-374 -837)">
+                                                <rect width="17" height="17" rx="2" transform="translate(374 840)" fill="#ff445a"/>
+                                                <rect width="19" height="19" rx="2" transform="translate(397 839)" fill="#ff445a"/>
+                                                <g transform="translate(422 837)" fill="none" stroke="#c7c2ba" stroke-width="1">
+                                                    <rect width="23" height="23" rx="2" stroke="none"/><rect x="0.5" y="0.5" width="22" height="22" rx="1.5" fill="none"/>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="compatibility__title">Location</div>
+                                </div>
+                                <div class="compatibility__chart">
+                                    <div class="compatibility__progress">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="img-fluid w-100" width="71" height="23" viewBox="0 0 71 23">
+                                            <g transform="translate(-470 -837)">
+                                                <rect width="17" height="17" rx="2" transform="translate(470 840)" fill="#ff445a"/>
+                                                <rect width="19" height="19" rx="2" transform="translate(493 839)" fill="#ff445a"/>
+                                                <rect width="23" height="23" rx="2" transform="translate(518 837)" fill="#ff445a"/>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="compatibility__title">Matches</div>
+                                </div>
                             </div>
-                            <div class="compatibility__title">Matches</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="user-list-item">
-                <div class="user-list-item__pic">
-                    <div class="user-list-item__img" style="background-image: url('img/photos/user-02.jpg');">
-                        <a class="user-list-item__btn btn btn_2" href="#">Claim Her</a>
-                    </div>
-                </div>
-                <div class="user-list-item__inf">
-                    <div class="user-list-item__title">
-                        <div class="user-list-item__name">Jennifer, 24</div>
-                        <div class="user-list-item__loc">New York (1000 km)</div>
-                    </div>
-                    <div class="compatibility-title">Compatibility score: 15 000</div>
-                    <div class="compatibility compatibility_list d-flex justify-content-sm-center justify-content-lg-start">
-                        <div class="compatibility__chart">
-                            <div class="compatibility__progress">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="img-fluid" width="80.36" height="79.746" viewBox="0 0 80.36 79.746">
-                                    <g transform="translate(-9.318 39.873) rotate(-45)">
-                                        <path fill="#f1ece9" transform="translate(55.54 13.611)" d="M12.691,10.115A35.747,35.747,0,0,0,7.55,0L0,7.837A25.391,25.391,0,0,1,.3,34.5l7.579,7.867h0a35.791,35.791,0,0,0,4.976-10.174,36.828,36.828,0,0,0,1.6-11.047A36.8,36.8,0,0,0,12.691,10.115Z"/>
-                                        <path fill="#dcc6df" transform="translate(13.612 55.243)" d="M7.83.3,0,7.846H0a35.705,35.705,0,0,0,10.357,5.222A36.8,36.8,0,0,0,21.65,14.756a36.738,36.738,0,0,0,11.27-1.844A35.629,35.629,0,0,0,43.211,7.534L35.4,0A25.486,25.486,0,0,1,7.83.3Z"/>
-                                        <path fill="#dcc6df" transform="translate(0 13.177)" d="M14.754,7.811,7.223,0A35.569,35.569,0,0,0,1.846,10.29a36.9,36.9,0,0,0-.158,22.561,35.732,35.732,0,0,0,5.22,10.357h0l7.55-7.83A25.489,25.489,0,0,1,14.754,7.811Z"/>
-                                        <path fill="#dcc6df" transform="translate(14.026 0)" d="M7.865,14.157h0a25.394,25.394,0,0,1,26.658.3l7.836-7.55a35.708,35.708,0,0,0-10.115-5.14A36.972,36.972,0,0,0,10.174,1.6,35.757,35.757,0,0,0,0,6.58l7.865,7.577Z"/>
-                                    </g>
-                                </svg>
-                            </div>
-                            <div class="compatibility__title">Interests</div>
-                        </div>
-                        <div class="compatibility__chart">
-                            <div class="compatibility__progress">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="img-fluid" width="80.36" height="79.746" viewBox="0 0 80.36 79.746">
-                                    <g transform="translate(-9.318 39.873) rotate(-45)">
-                                        <path fill="#f1ece9" transform="translate(55.54 13.611)" d="M12.691,10.115A35.747,35.747,0,0,0,7.55,0L0,7.837A25.391,25.391,0,0,1,.3,34.5l7.579,7.867h0a35.791,35.791,0,0,0,4.976-10.174,36.828,36.828,0,0,0,1.6-11.047A36.8,36.8,0,0,0,12.691,10.115Z"/>
-                                        <path fill="#f1ece9" transform="translate(13.612 55.243)" d="M7.83.3,0,7.846H0a35.705,35.705,0,0,0,10.357,5.222A36.8,36.8,0,0,0,21.65,14.756a36.738,36.738,0,0,0,11.27-1.844A35.629,35.629,0,0,0,43.211,7.534L35.4,0A25.486,25.486,0,0,1,7.83.3Z"/>
-                                        <path fill="#dcc6df" transform="translate(0 13.177)" d="M14.754,7.811,7.223,0A35.569,35.569,0,0,0,1.846,10.29a36.9,36.9,0,0,0-.158,22.561,35.732,35.732,0,0,0,5.22,10.357h0l7.55-7.83A25.489,25.489,0,0,1,14.754,7.811Z"/>
-                                        <path fill="#dcc6df" transform="translate(14.026 0)" d="M7.865,14.157h0a25.394,25.394,0,0,1,26.658.3l7.836-7.55a35.708,35.708,0,0,0-10.115-5.14A36.972,36.972,0,0,0,10.174,1.6,35.757,35.757,0,0,0,0,6.58l7.865,7.577Z"/>
-                                    </g>
-                                </svg>
-                            </div>
-                            <div class="compatibility__title">Location</div>
-                        </div>
-                        <div class="compatibility__chart">
-                            <div class="compatibility__progress">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="img-fluid" width="80.36" height="79.746" viewBox="0 0 80.36 79.746">
-                                    <g transform="translate(-9.318 39.873) rotate(-45)">
-                                        <path fill="#f1ece9" transform="translate(55.54 13.611)" d="M12.691,10.115A35.747,35.747,0,0,0,7.55,0L0,7.837A25.391,25.391,0,0,1,.3,34.5l7.579,7.867h0a35.791,35.791,0,0,0,4.976-10.174,36.828,36.828,0,0,0,1.6-11.047A36.8,36.8,0,0,0,12.691,10.115Z"/>
-                                        <path fill="#f1ece9" transform="translate(13.612 55.243)" d="M7.83.3,0,7.846H0a35.705,35.705,0,0,0,10.357,5.222A36.8,36.8,0,0,0,21.65,14.756a36.738,36.738,0,0,0,11.27-1.844A35.629,35.629,0,0,0,43.211,7.534L35.4,0A25.486,25.486,0,0,1,7.83.3Z"/>
-                                        <path fill="#f1ece9" transform="translate(0 13.177)" d="M14.754,7.811,7.223,0A35.569,35.569,0,0,0,1.846,10.29a36.9,36.9,0,0,0-.158,22.561,35.732,35.732,0,0,0,5.22,10.357h0l7.55-7.83A25.489,25.489,0,0,1,14.754,7.811Z"/>
-                                        <path fill="#dcc6df" transform="translate(14.026 0)" d="M7.865,14.157h0a25.394,25.394,0,0,1,26.658.3l7.836-7.55a35.708,35.708,0,0,0-10.115-5.14A36.972,36.972,0,0,0,10.174,1.6,35.757,35.757,0,0,0,0,6.58l7.865,7.577Z"/>
-                                    </g>
-                                </svg>
-                            </div>
-                            <div class="compatibility__title">Matches</div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="user-list-item">
-                <div class="user-list-item__pic">
-                    <div class="user-list-item__img" style="background-image: url('img/photos/user-03.jpg');">
-                        <a class="user-list-item__btn btn btn_2" href="#">Claim Her</a>
-                    </div>
-                </div>
-                <div class="user-list-item__inf">
-                    <div class="user-list-item__title">
-                        <div class="user-list-item__name">Jennifer, 24</div>
-                        <div class="user-list-item__loc">New York (1000 km)</div>
-                    </div>
-                    <div class="compatibility-title">Compatibility score: 15 000</div>
-                    <div class="compatibility compatibility_list d-flex justify-content-sm-center justify-content-lg-start">
-                        <div class="compatibility__chart">
-                            <div class="compatibility__progress">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="img-fluid" width="80.36" height="79.746" viewBox="0 0 80.36 79.746">
-                                    <g transform="translate(-9.318 39.873) rotate(-45)">
-                                        <path fill="#f1ece9" transform="translate(55.54 13.611)" d="M12.691,10.115A35.747,35.747,0,0,0,7.55,0L0,7.837A25.391,25.391,0,0,1,.3,34.5l7.579,7.867h0a35.791,35.791,0,0,0,4.976-10.174,36.828,36.828,0,0,0,1.6-11.047A36.8,36.8,0,0,0,12.691,10.115Z"/>
-                                        <path fill="#dcc6df" transform="translate(13.612 55.243)" d="M7.83.3,0,7.846H0a35.705,35.705,0,0,0,10.357,5.222A36.8,36.8,0,0,0,21.65,14.756a36.738,36.738,0,0,0,11.27-1.844A35.629,35.629,0,0,0,43.211,7.534L35.4,0A25.486,25.486,0,0,1,7.83.3Z"/>
-                                        <path fill="#dcc6df" transform="translate(0 13.177)" d="M14.754,7.811,7.223,0A35.569,35.569,0,0,0,1.846,10.29a36.9,36.9,0,0,0-.158,22.561,35.732,35.732,0,0,0,5.22,10.357h0l7.55-7.83A25.489,25.489,0,0,1,14.754,7.811Z"/>
-                                        <path fill="#dcc6df" transform="translate(14.026 0)" d="M7.865,14.157h0a25.394,25.394,0,0,1,26.658.3l7.836-7.55a35.708,35.708,0,0,0-10.115-5.14A36.972,36.972,0,0,0,10.174,1.6,35.757,35.757,0,0,0,0,6.58l7.865,7.577Z"/>
-                                    </g>
-                                </svg>
+                    <div class="user-list-item">
+                        <div class="user-list-item__pic">
+                            <div class="user-list-item__img" style="background-image: url('img/photos/user-02.jpg');">
+                                <a class="user-list-item__btn btn btn_2" href="#">claim her</a>
                             </div>
-                            <div class="compatibility__title">Interests</div>
                         </div>
-                        <div class="compatibility__chart">
-                            <div class="compatibility__progress">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="img-fluid" width="80.36" height="79.746" viewBox="0 0 80.36 79.746">
-                                    <g transform="translate(-9.318 39.873) rotate(-45)">
-                                        <path fill="#f1ece9" transform="translate(55.54 13.611)" d="M12.691,10.115A35.747,35.747,0,0,0,7.55,0L0,7.837A25.391,25.391,0,0,1,.3,34.5l7.579,7.867h0a35.791,35.791,0,0,0,4.976-10.174,36.828,36.828,0,0,0,1.6-11.047A36.8,36.8,0,0,0,12.691,10.115Z"/>
-                                        <path fill="#f1ece9" transform="translate(13.612 55.243)" d="M7.83.3,0,7.846H0a35.705,35.705,0,0,0,10.357,5.222A36.8,36.8,0,0,0,21.65,14.756a36.738,36.738,0,0,0,11.27-1.844A35.629,35.629,0,0,0,43.211,7.534L35.4,0A25.486,25.486,0,0,1,7.83.3Z"/>
-                                        <path fill="#dcc6df" transform="translate(0 13.177)" d="M14.754,7.811,7.223,0A35.569,35.569,0,0,0,1.846,10.29a36.9,36.9,0,0,0-.158,22.561,35.732,35.732,0,0,0,5.22,10.357h0l7.55-7.83A25.489,25.489,0,0,1,14.754,7.811Z"/>
-                                        <path fill="#dcc6df" transform="translate(14.026 0)" d="M7.865,14.157h0a25.394,25.394,0,0,1,26.658.3l7.836-7.55a35.708,35.708,0,0,0-10.115-5.14A36.972,36.972,0,0,0,10.174,1.6,35.757,35.757,0,0,0,0,6.58l7.865,7.577Z"/>
-                                    </g>
-                                </svg>
+                        <div class="user-list-item__inf">
+                            <div class="user-list-item__title">
+                                <div class="user-list-item__name">Elizabeth, 32</div>
+                                <div class="user-list-item__loc">Tokio (5000 km)</div>
                             </div>
-                            <div class="compatibility__title">Location</div>
-                        </div>
-                        <div class="compatibility__chart">
-                            <div class="compatibility__progress">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="img-fluid" width="80.36" height="79.746" viewBox="0 0 80.36 79.746">
-                                    <g transform="translate(-9.318 39.873) rotate(-45)">
-                                        <path fill="#f1ece9" transform="translate(55.54 13.611)" d="M12.691,10.115A35.747,35.747,0,0,0,7.55,0L0,7.837A25.391,25.391,0,0,1,.3,34.5l7.579,7.867h0a35.791,35.791,0,0,0,4.976-10.174,36.828,36.828,0,0,0,1.6-11.047A36.8,36.8,0,0,0,12.691,10.115Z"/>
-                                        <path fill="#f1ece9" transform="translate(13.612 55.243)" d="M7.83.3,0,7.846H0a35.705,35.705,0,0,0,10.357,5.222A36.8,36.8,0,0,0,21.65,14.756a36.738,36.738,0,0,0,11.27-1.844A35.629,35.629,0,0,0,43.211,7.534L35.4,0A25.486,25.486,0,0,1,7.83.3Z"/>
-                                        <path fill="#f1ece9" transform="translate(0 13.177)" d="M14.754,7.811,7.223,0A35.569,35.569,0,0,0,1.846,10.29a36.9,36.9,0,0,0-.158,22.561,35.732,35.732,0,0,0,5.22,10.357h0l7.55-7.83A25.489,25.489,0,0,1,14.754,7.811Z"/>
-                                        <path fill="#dcc6df" transform="translate(14.026 0)" d="M7.865,14.157h0a25.394,25.394,0,0,1,26.658.3l7.836-7.55a35.708,35.708,0,0,0-10.115-5.14A36.972,36.972,0,0,0,10.174,1.6,35.757,35.757,0,0,0,0,6.58l7.865,7.577Z"/>
-                                    </g>
-                                </svg>
+                            <div class="compatibility-title">Compatibility score: 15 000</div>
+                            <div class="compatibility compatibility_list d-flex justify-content-between">
+                                <div class="compatibility__chart">
+                                    <div class="compatibility__progress">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="img-fluid w-100" width="71" height="23" viewBox="0 0 71 23">
+                                            <g transform="translate(-279 -837)">
+                                                <rect width="17" height="17" rx="2" transform="translate(279 840)" fill="#ff445a"/>
+                                                <g transform="translate(302 839)" fill="none" stroke="#c7c2ba" stroke-width="1">
+                                                    <rect width="19" height="19" rx="2" stroke="none"/>
+                                                    <rect x="0.5" y="0.5" width="18" height="18" rx="1.5" fill="none"/>
+                                                </g>
+                                                <g transform="translate(327 837)" fill="none" stroke="#c7c2ba" stroke-width="1">
+                                                    <rect width="23" height="23" rx="2" stroke="none"/>
+                                                    <rect x="0.5" y="0.5" width="22" height="22" rx="1.5" fill="none"/>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="compatibility__title">Interests</div>
+                                </div>
+                                <div class="compatibility__chart">
+                                    <div class="compatibility__progress">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="img-fluid w-100" width="71" height="23" viewBox="0 0 71 23">
+                                            <g transform="translate(-374 -837)">
+                                                <rect width="17" height="17" rx="2" transform="translate(374 840)" fill="#ff445a"/>
+                                                <rect width="19" height="19" rx="2" transform="translate(397 839)" fill="#ff445a"/>
+                                                <g transform="translate(422 837)" fill="none" stroke="#c7c2ba" stroke-width="1">
+                                                    <rect width="23" height="23" rx="2" stroke="none"/><rect x="0.5" y="0.5" width="22" height="22" rx="1.5" fill="none"/>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="compatibility__title">Location</div>
+                                </div>
+                                <div class="compatibility__chart">
+                                    <div class="compatibility__progress">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="img-fluid w-100" width="71" height="23" viewBox="0 0 71 23">
+                                            <g transform="translate(-470 -837)">
+                                                <rect width="17" height="17" rx="2" transform="translate(470 840)" fill="#ff445a"/>
+                                                <rect width="19" height="19" rx="2" transform="translate(493 839)" fill="#ff445a"/>
+                                                <rect width="23" height="23" rx="2" transform="translate(518 837)" fill="#ff445a"/>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="compatibility__title">Matches</div>
+                                </div>
                             </div>
-                            <div class="compatibility__title">Matches</div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="user-list-item">
-                <div class="user-list-item__pic">
-                    <div class="user-list-item__img" style="background-image: url('img/photos/user-04.jpg');">
-                        <a class="user-list-item__btn btn btn_2" href="#">Claim Her</a>
-                    </div>
-                </div>
-                <div class="user-list-item__inf">
-                    <div class="user-list-item__title">
-                        <div class="user-list-item__name">Jennifer, 24</div>
-                        <div class="user-list-item__loc">New York (1000 km)</div>
-                    </div>
-                    <div class="compatibility-title">Compatibility score: 15 000</div>
-                    <div class="compatibility compatibility_list d-flex justify-content-sm-center justify-content-lg-start">
-                        <div class="compatibility__chart">
-                            <div class="compatibility__progress">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="img-fluid" width="80.36" height="79.746" viewBox="0 0 80.36 79.746">
-                                    <g transform="translate(-9.318 39.873) rotate(-45)">
-                                        <path fill="#f1ece9" transform="translate(55.54 13.611)" d="M12.691,10.115A35.747,35.747,0,0,0,7.55,0L0,7.837A25.391,25.391,0,0,1,.3,34.5l7.579,7.867h0a35.791,35.791,0,0,0,4.976-10.174,36.828,36.828,0,0,0,1.6-11.047A36.8,36.8,0,0,0,12.691,10.115Z"/>
-                                        <path fill="#dcc6df" transform="translate(13.612 55.243)" d="M7.83.3,0,7.846H0a35.705,35.705,0,0,0,10.357,5.222A36.8,36.8,0,0,0,21.65,14.756a36.738,36.738,0,0,0,11.27-1.844A35.629,35.629,0,0,0,43.211,7.534L35.4,0A25.486,25.486,0,0,1,7.83.3Z"/>
-                                        <path fill="#dcc6df" transform="translate(0 13.177)" d="M14.754,7.811,7.223,0A35.569,35.569,0,0,0,1.846,10.29a36.9,36.9,0,0,0-.158,22.561,35.732,35.732,0,0,0,5.22,10.357h0l7.55-7.83A25.489,25.489,0,0,1,14.754,7.811Z"/>
-                                        <path fill="#dcc6df" transform="translate(14.026 0)" d="M7.865,14.157h0a25.394,25.394,0,0,1,26.658.3l7.836-7.55a35.708,35.708,0,0,0-10.115-5.14A36.972,36.972,0,0,0,10.174,1.6,35.757,35.757,0,0,0,0,6.58l7.865,7.577Z"/>
-                                    </g>
-                                </svg>
+                    <div class="user-list-item">
+                        <div class="user-list-item__pic">
+                            <div class="user-list-item__img" style="background-image: url('img/photos/user-03.jpg');">
+                                <a class="user-list-item__btn btn btn_2" href="#">claim her</a>
                             </div>
-                            <div class="compatibility__title">Interests</div>
                         </div>
-                        <div class="compatibility__chart">
-                            <div class="compatibility__progress">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="img-fluid" width="80.36" height="79.746" viewBox="0 0 80.36 79.746">
-                                    <g transform="translate(-9.318 39.873) rotate(-45)">
-                                        <path fill="#f1ece9" transform="translate(55.54 13.611)" d="M12.691,10.115A35.747,35.747,0,0,0,7.55,0L0,7.837A25.391,25.391,0,0,1,.3,34.5l7.579,7.867h0a35.791,35.791,0,0,0,4.976-10.174,36.828,36.828,0,0,0,1.6-11.047A36.8,36.8,0,0,0,12.691,10.115Z"/>
-                                        <path fill="#f1ece9" transform="translate(13.612 55.243)" d="M7.83.3,0,7.846H0a35.705,35.705,0,0,0,10.357,5.222A36.8,36.8,0,0,0,21.65,14.756a36.738,36.738,0,0,0,11.27-1.844A35.629,35.629,0,0,0,43.211,7.534L35.4,0A25.486,25.486,0,0,1,7.83.3Z"/>
-                                        <path fill="#dcc6df" transform="translate(0 13.177)" d="M14.754,7.811,7.223,0A35.569,35.569,0,0,0,1.846,10.29a36.9,36.9,0,0,0-.158,22.561,35.732,35.732,0,0,0,5.22,10.357h0l7.55-7.83A25.489,25.489,0,0,1,14.754,7.811Z"/>
-                                        <path fill="#dcc6df" transform="translate(14.026 0)" d="M7.865,14.157h0a25.394,25.394,0,0,1,26.658.3l7.836-7.55a35.708,35.708,0,0,0-10.115-5.14A36.972,36.972,0,0,0,10.174,1.6,35.757,35.757,0,0,0,0,6.58l7.865,7.577Z"/>
-                                    </g>
-                                </svg>
+                        <div class="user-list-item__inf">
+                            <div class="user-list-item__title">
+                                <div class="user-list-item__name">Elizabeth, 32</div>
+                                <div class="user-list-item__loc">Tokio (5000 km)</div>
                             </div>
-                            <div class="compatibility__title">Location</div>
+                            <div class="compatibility-title">Compatibility score: 15 000</div>
+                            <div class="compatibility compatibility_list d-flex justify-content-between">
+                                <div class="compatibility__chart">
+                                    <div class="compatibility__progress">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="img-fluid w-100" width="71" height="23" viewBox="0 0 71 23">
+                                            <g transform="translate(-279 -837)">
+                                                <rect width="17" height="17" rx="2" transform="translate(279 840)" fill="#ff445a"/>
+                                                <g transform="translate(302 839)" fill="none" stroke="#c7c2ba" stroke-width="1">
+                                                    <rect width="19" height="19" rx="2" stroke="none"/>
+                                                    <rect x="0.5" y="0.5" width="18" height="18" rx="1.5" fill="none"/>
+                                                </g>
+                                                <g transform="translate(327 837)" fill="none" stroke="#c7c2ba" stroke-width="1">
+                                                    <rect width="23" height="23" rx="2" stroke="none"/>
+                                                    <rect x="0.5" y="0.5" width="22" height="22" rx="1.5" fill="none"/>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="compatibility__title">Interests</div>
+                                </div>
+                                <div class="compatibility__chart">
+                                    <div class="compatibility__progress">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="img-fluid w-100" width="71" height="23" viewBox="0 0 71 23">
+                                            <g transform="translate(-374 -837)">
+                                                <rect width="17" height="17" rx="2" transform="translate(374 840)" fill="#ff445a"/>
+                                                <rect width="19" height="19" rx="2" transform="translate(397 839)" fill="#ff445a"/>
+                                                <g transform="translate(422 837)" fill="none" stroke="#c7c2ba" stroke-width="1">
+                                                    <rect width="23" height="23" rx="2" stroke="none"/><rect x="0.5" y="0.5" width="22" height="22" rx="1.5" fill="none"/>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="compatibility__title">Location</div>
+                                </div>
+                                <div class="compatibility__chart">
+                                    <div class="compatibility__progress">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="img-fluid w-100" width="71" height="23" viewBox="0 0 71 23">
+                                            <g transform="translate(-470 -837)">
+                                                <rect width="17" height="17" rx="2" transform="translate(470 840)" fill="#ff445a"/>
+                                                <rect width="19" height="19" rx="2" transform="translate(493 839)" fill="#ff445a"/>
+                                                <rect width="23" height="23" rx="2" transform="translate(518 837)" fill="#ff445a"/>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="compatibility__title">Matches</div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="compatibility__chart">
-                            <div class="compatibility__progress">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="img-fluid" width="80.36" height="79.746" viewBox="0 0 80.36 79.746">
-                                    <g transform="translate(-9.318 39.873) rotate(-45)">
-                                        <path fill="#f1ece9" transform="translate(55.54 13.611)" d="M12.691,10.115A35.747,35.747,0,0,0,7.55,0L0,7.837A25.391,25.391,0,0,1,.3,34.5l7.579,7.867h0a35.791,35.791,0,0,0,4.976-10.174,36.828,36.828,0,0,0,1.6-11.047A36.8,36.8,0,0,0,12.691,10.115Z"/>
-                                        <path fill="#f1ece9" transform="translate(13.612 55.243)" d="M7.83.3,0,7.846H0a35.705,35.705,0,0,0,10.357,5.222A36.8,36.8,0,0,0,21.65,14.756a36.738,36.738,0,0,0,11.27-1.844A35.629,35.629,0,0,0,43.211,7.534L35.4,0A25.486,25.486,0,0,1,7.83.3Z"/>
-                                        <path fill="#f1ece9" transform="translate(0 13.177)" d="M14.754,7.811,7.223,0A35.569,35.569,0,0,0,1.846,10.29a36.9,36.9,0,0,0-.158,22.561,35.732,35.732,0,0,0,5.22,10.357h0l7.55-7.83A25.489,25.489,0,0,1,14.754,7.811Z"/>
-                                        <path fill="#dcc6df" transform="translate(14.026 0)" d="M7.865,14.157h0a25.394,25.394,0,0,1,26.658.3l7.836-7.55a35.708,35.708,0,0,0-10.115-5.14A36.972,36.972,0,0,0,10.174,1.6,35.757,35.757,0,0,0,0,6.58l7.865,7.577Z"/>
-                                    </g>
-                                </svg>
+                    </div>
+                    <div class="user-list-item">
+                        <div class="user-list-item__pic">
+                            <div class="user-list-item__img" style="background-image: url('img/photos/user-04.jpg');">
+                                <a class="user-list-item__btn btn btn_2" href="#">claim her</a>
                             </div>
-                            <div class="compatibility__title">Matches</div>
+                        </div>
+                        <div class="user-list-item__inf">
+                            <div class="user-list-item__title">
+                                <div class="user-list-item__name">Elizabeth, 32</div>
+                                <div class="user-list-item__loc">Tokio (5000 km)</div>
+                            </div>
+                            <div class="compatibility-title">Compatibility score: 15 000</div>
+                            <div class="compatibility compatibility_list d-flex justify-content-between">
+                                <div class="compatibility__chart">
+                                    <div class="compatibility__progress">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="img-fluid w-100" width="71" height="23" viewBox="0 0 71 23">
+                                            <g transform="translate(-279 -837)">
+                                                <rect width="17" height="17" rx="2" transform="translate(279 840)" fill="#ff445a"/>
+                                                <g transform="translate(302 839)" fill="none" stroke="#c7c2ba" stroke-width="1">
+                                                    <rect width="19" height="19" rx="2" stroke="none"/>
+                                                    <rect x="0.5" y="0.5" width="18" height="18" rx="1.5" fill="none"/>
+                                                </g>
+                                                <g transform="translate(327 837)" fill="none" stroke="#c7c2ba" stroke-width="1">
+                                                    <rect width="23" height="23" rx="2" stroke="none"/>
+                                                    <rect x="0.5" y="0.5" width="22" height="22" rx="1.5" fill="none"/>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="compatibility__title">Interests</div>
+                                </div>
+                                <div class="compatibility__chart">
+                                    <div class="compatibility__progress">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="img-fluid w-100" width="71" height="23" viewBox="0 0 71 23">
+                                            <g transform="translate(-374 -837)">
+                                                <rect width="17" height="17" rx="2" transform="translate(374 840)" fill="#ff445a"/>
+                                                <rect width="19" height="19" rx="2" transform="translate(397 839)" fill="#ff445a"/>
+                                                <g transform="translate(422 837)" fill="none" stroke="#c7c2ba" stroke-width="1">
+                                                    <rect width="23" height="23" rx="2" stroke="none"/><rect x="0.5" y="0.5" width="22" height="22" rx="1.5" fill="none"/>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="compatibility__title">Location</div>
+                                </div>
+                                <div class="compatibility__chart">
+                                    <div class="compatibility__progress">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="img-fluid w-100" width="71" height="23" viewBox="0 0 71 23">
+                                            <g transform="translate(-470 -837)">
+                                                <rect width="17" height="17" rx="2" transform="translate(470 840)" fill="#ff445a"/>
+                                                <rect width="19" height="19" rx="2" transform="translate(493 839)" fill="#ff445a"/>
+                                                <rect width="23" height="23" rx="2" transform="translate(518 837)" fill="#ff445a"/>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="compatibility__title">Matches</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="container">
         <div class="user-list-title text-center">Claim 2 of these sexy matches by<br class="user-list-title_br-mob"> Signing Up<br class="d-none d-lg-inline"> and I`ll reward you<br class="user-list-title_br-mob"> with $20 gift card!</div>
-        <div class="user-list-extra">
-            <div class="user-list-extra-item">
-                <div class="user-list-extra-item__pic">
-                    <div class="user-list-extra-item__img" style="background-image: url('img/photos/user-extra-01.jpg');">
-                        <div class="user-list-extra-item__icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="img-fluid" viewBox="0 0 64 64">
-                                <path class="icon-lock" d="M36.22 32.86a6.27 6.27 0 00-4.5-1.8c-3.4.1-6.2 3-6.1 6.4 0 1.8.9 3.5 2.2 4.6v4.4c-.1 2.2 1.6 4.1 3.8 4.2s4.1-1.6 4.2-3.8v-4.8c2.6-2.2 3-6.2.8-8.8-.1-.1-.3-.2-.4-.4zm-2 7.4c-.5.4-.8 1.1-.8 1.7v4.5c0 .8-.7 1.5-1.5 1.5s-1.5-.7-1.5-1.5v-4.4c0-.7-.3-1.3-.8-1.7-.9-.7-1.5-1.9-1.4-3.1.1-2 1.7-3.5 3.6-3.6h.1c2.1 0 3.8 1.7 3.8 3.7-.1 1.1-.6 2.2-1.5 2.9z"/>
-                                <path class="icon-lock" d="M48.04 25.4v-9.1c0-9-7.3-16.2-16.2-16.3-9 0-16.2 7.3-16.3 16.2v9.1a21.9 21.9 0 00-6 11.3c-.1.7.3 1.3 1 1.5.7.1 1.3-.3 1.5-1 2.3-10.9 13-18 23.9-15.7s18 13 15.7 23.9c-2.3 10.9-13 18-23.9 15.7-7.9-1.6-14.1-7.8-15.7-15.7-.2-.7-.8-1.1-1.5-.9-.7.1-1.1.8-1 1.4a22.7 22.7 0 0026.8 17.7 22.55 22.55 0 0017.7-26.7c-.9-4.3-3-8.2-6-11.4zm-8.5-5.5c-5-1.8-10.5-1.8-15.5 0v-3.6a7.7 7.7 0 0115.4 0v3.6h.1zm6 3.3c-1.1-.8-2.3-1.6-3.5-2.2v-4.7c.1-5.7-4.4-10.3-10.1-10.4-5.7 0-10.3 4.5-10.4 10.2v5c-1.2.6-2.4 1.3-3.5 2.2v-6.9c0-7.6 6.2-13.7 13.7-13.7 7.6 0 13.7 6.2 13.7 13.7l.1 6.8z"/>
-                                <path class="icon-lock" d="M48.72 39.98c-.5-.5-1.3-.5-1.8 0s-.5 1.3 0 1.8 1.3.5 1.8 0c.2-.2.4-.6.4-.9 0-.4-.2-.7-.4-.9zM48.67 36.83c-1.8-7.8-8.8-13.3-16.8-13.3-.7 0-1.2.6-1.2 1.2 0 .7.6 1.2 1.2 1.2 6.8 0 12.8 4.7 14.3 11.3.2.7.8 1.1 1.5.9.7.1 1.1-.6 1-1.3zM10.4 39.58c-.7 0-1.3.6-1.3 1.2 0 .7.6 1.3 1.2 1.3h.1c.7 0 1.3-.6 1.3-1.2-.1-.7-.6-1.3-1.3-1.3z"/>
-                            </svg>
+    </div>
+    <div class="bg-wave">
+        <div class="bg-wave__inner">
+            <div class="container">
+                <div class="user-list-extra">
+                    <div class="user-list-extra-item">
+                        <div class="user-list-extra-item__pic">
+                            <div class="user-list-extra-item__img" style="background-image: url('img/photos/user-extra-01.jpg');">
+                                <div class="user-list-extra-item__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0" y="0" version="1.1" viewBox="0 0 64 64" xml:space="preserve">
+                                        <g transform="translate(-66.27 -5.99)">
+                                            <path class="icon-lock" d="M119 33.1l-.3-.1v-6.5c0-11.3-9.2-20.5-20.5-20.5a20.5 20.5 0 00-20.4 20.5V33l-.3.1a5.4 5.4 0 00-3.5 5v7.6C74 59.1 84.9 70 98.3 70s24.3-10.9 24.3-24.3v-7.6c0-2.2-1.5-4.2-3.6-5zm-38.2-.7v-5.9C80.8 16.8 88.6 9 98.3 9s17.5 7.8 17.5 17.5v6.3h-4.6v-6.3c0-7.1-5.8-12.9-12.9-12.9-7.1 0-12.9 5.8-12.9 12.9v6.3h-4.6v-.4zm27.3-5.9v6.3H88.4v-6.3c0-5.4 4.4-9.9 9.9-9.9 5.4 0 9.8 4.4 9.8 9.9zm11.4 19.2a21.25 21.25 0 11-42.5 0v-7.6c0-1.3 1-2.3 2.3-2.3h37.9c1.3 0 2.3 1 2.3 2.3v7.6z"/>
+                                            <path class="icon-lock" d="M98.3 40.6a5.8 5.8 0 00-1.9 11.3l.3.1v6.9c0 .9.7 1.7 1.7 1.7.9 0 1.7-.7 1.7-1.7V52l.3-.1c3-1.1 4.6-4.4 3.5-7.4-1-2.3-3.2-3.9-5.6-3.9zm0 8.3c-1.4 0-2.5-1.1-2.5-2.5s1.1-2.5 2.5-2.5 2.5 1.1 2.5 2.5-1.2 2.5-2.5 2.5z"/>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user-list-extra-item__inf">
+                            <div class="user-list-extra-item__name">Elizabeth, 32</div>
+                            <div class="user-list-extra-item__loc">Tokio (5000 km)</div>
                         </div>
                     </div>
-                </div>
-                <div class="user-list-extra-item__inf">
-                    <div class="user-list-extra-item__name">Jennifer, 24</div>
-                    <div class="user-list-extra-item__loc">New York&nbsp;<br class="user-list-extra-item__br">(1000 km)</div>
-                </div>
-            </div>
-            <div class="user-list-extra-item">
-                <div class="user-list-extra-item__pic">
-                    <div class="user-list-extra-item__img" style="background-image: url('img/photos/user-extra-02.jpg');">
-                        <div class="user-list-extra-item__icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="img-fluid" viewBox="0 0 64 64">
-                                <path class="icon-lock" d="M36.22 32.86a6.27 6.27 0 00-4.5-1.8c-3.4.1-6.2 3-6.1 6.4 0 1.8.9 3.5 2.2 4.6v4.4c-.1 2.2 1.6 4.1 3.8 4.2s4.1-1.6 4.2-3.8v-4.8c2.6-2.2 3-6.2.8-8.8-.1-.1-.3-.2-.4-.4zm-2 7.4c-.5.4-.8 1.1-.8 1.7v4.5c0 .8-.7 1.5-1.5 1.5s-1.5-.7-1.5-1.5v-4.4c0-.7-.3-1.3-.8-1.7-.9-.7-1.5-1.9-1.4-3.1.1-2 1.7-3.5 3.6-3.6h.1c2.1 0 3.8 1.7 3.8 3.7-.1 1.1-.6 2.2-1.5 2.9z"/>
-                                <path class="icon-lock" d="M48.04 25.4v-9.1c0-9-7.3-16.2-16.2-16.3-9 0-16.2 7.3-16.3 16.2v9.1a21.9 21.9 0 00-6 11.3c-.1.7.3 1.3 1 1.5.7.1 1.3-.3 1.5-1 2.3-10.9 13-18 23.9-15.7s18 13 15.7 23.9c-2.3 10.9-13 18-23.9 15.7-7.9-1.6-14.1-7.8-15.7-15.7-.2-.7-.8-1.1-1.5-.9-.7.1-1.1.8-1 1.4a22.7 22.7 0 0026.8 17.7 22.55 22.55 0 0017.7-26.7c-.9-4.3-3-8.2-6-11.4zm-8.5-5.5c-5-1.8-10.5-1.8-15.5 0v-3.6a7.7 7.7 0 0115.4 0v3.6h.1zm6 3.3c-1.1-.8-2.3-1.6-3.5-2.2v-4.7c.1-5.7-4.4-10.3-10.1-10.4-5.7 0-10.3 4.5-10.4 10.2v5c-1.2.6-2.4 1.3-3.5 2.2v-6.9c0-7.6 6.2-13.7 13.7-13.7 7.6 0 13.7 6.2 13.7 13.7l.1 6.8z"/>
-                                <path class="icon-lock" d="M48.72 39.98c-.5-.5-1.3-.5-1.8 0s-.5 1.3 0 1.8 1.3.5 1.8 0c.2-.2.4-.6.4-.9 0-.4-.2-.7-.4-.9zM48.67 36.83c-1.8-7.8-8.8-13.3-16.8-13.3-.7 0-1.2.6-1.2 1.2 0 .7.6 1.2 1.2 1.2 6.8 0 12.8 4.7 14.3 11.3.2.7.8 1.1 1.5.9.7.1 1.1-.6 1-1.3zM10.4 39.58c-.7 0-1.3.6-1.3 1.2 0 .7.6 1.3 1.2 1.3h.1c.7 0 1.3-.6 1.3-1.2-.1-.7-.6-1.3-1.3-1.3z"/>
-                            </svg>
+                    <div class="user-list-extra-item">
+                        <div class="user-list-extra-item__pic">
+                            <div class="user-list-extra-item__img" style="background-image: url('img/photos/user-extra-02.jpg');">
+                                <div class="user-list-extra-item__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0" y="0" version="1.1" viewBox="0 0 64 64" xml:space="preserve">
+                                        <g transform="translate(-66.27 -5.99)">
+                                            <path class="icon-lock" d="M119 33.1l-.3-.1v-6.5c0-11.3-9.2-20.5-20.5-20.5a20.5 20.5 0 00-20.4 20.5V33l-.3.1a5.4 5.4 0 00-3.5 5v7.6C74 59.1 84.9 70 98.3 70s24.3-10.9 24.3-24.3v-7.6c0-2.2-1.5-4.2-3.6-5zm-38.2-.7v-5.9C80.8 16.8 88.6 9 98.3 9s17.5 7.8 17.5 17.5v6.3h-4.6v-6.3c0-7.1-5.8-12.9-12.9-12.9-7.1 0-12.9 5.8-12.9 12.9v6.3h-4.6v-.4zm27.3-5.9v6.3H88.4v-6.3c0-5.4 4.4-9.9 9.9-9.9 5.4 0 9.8 4.4 9.8 9.9zm11.4 19.2a21.25 21.25 0 11-42.5 0v-7.6c0-1.3 1-2.3 2.3-2.3h37.9c1.3 0 2.3 1 2.3 2.3v7.6z"/>
+                                            <path class="icon-lock" d="M98.3 40.6a5.8 5.8 0 00-1.9 11.3l.3.1v6.9c0 .9.7 1.7 1.7 1.7.9 0 1.7-.7 1.7-1.7V52l.3-.1c3-1.1 4.6-4.4 3.5-7.4-1-2.3-3.2-3.9-5.6-3.9zm0 8.3c-1.4 0-2.5-1.1-2.5-2.5s1.1-2.5 2.5-2.5 2.5 1.1 2.5 2.5-1.2 2.5-2.5 2.5z"/>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user-list-extra-item__inf">
+                            <div class="user-list-extra-item__name">Elizabeth, 32</div>
+                            <div class="user-list-extra-item__loc">Tokio (5000 km)</div>
+                        </div>
+                    </div><div class="user-list-extra-item">
+                    <div class="user-list-extra-item__pic">
+                        <div class="user-list-extra-item__img" style="background-image: url('img/photos/user-extra-03.jpg');">
+                            <div class="user-list-extra-item__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0" y="0" version="1.1" viewBox="0 0 64 64" xml:space="preserve">
+                                        <g transform="translate(-66.27 -5.99)">
+                                            <path class="icon-lock" d="M119 33.1l-.3-.1v-6.5c0-11.3-9.2-20.5-20.5-20.5a20.5 20.5 0 00-20.4 20.5V33l-.3.1a5.4 5.4 0 00-3.5 5v7.6C74 59.1 84.9 70 98.3 70s24.3-10.9 24.3-24.3v-7.6c0-2.2-1.5-4.2-3.6-5zm-38.2-.7v-5.9C80.8 16.8 88.6 9 98.3 9s17.5 7.8 17.5 17.5v6.3h-4.6v-6.3c0-7.1-5.8-12.9-12.9-12.9-7.1 0-12.9 5.8-12.9 12.9v6.3h-4.6v-.4zm27.3-5.9v6.3H88.4v-6.3c0-5.4 4.4-9.9 9.9-9.9 5.4 0 9.8 4.4 9.8 9.9zm11.4 19.2a21.25 21.25 0 11-42.5 0v-7.6c0-1.3 1-2.3 2.3-2.3h37.9c1.3 0 2.3 1 2.3 2.3v7.6z"/>
+                                            <path class="icon-lock" d="M98.3 40.6a5.8 5.8 0 00-1.9 11.3l.3.1v6.9c0 .9.7 1.7 1.7 1.7.9 0 1.7-.7 1.7-1.7V52l.3-.1c3-1.1 4.6-4.4 3.5-7.4-1-2.3-3.2-3.9-5.6-3.9zm0 8.3c-1.4 0-2.5-1.1-2.5-2.5s1.1-2.5 2.5-2.5 2.5 1.1 2.5 2.5-1.2 2.5-2.5 2.5z"/>
+                                        </g>
+                                    </svg>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="user-list-extra-item__inf">
-                    <div class="user-list-extra-item__name">Jennifer, 24</div>
-                    <div class="user-list-extra-item__loc">New York&nbsp;<br class="user-list-extra-item__br">(1000 km)</div>
-                </div>
-            </div>
-            <div class="user-list-extra-item">
-                <div class="user-list-extra-item__pic">
-                    <div class="user-list-extra-item__img" style="background-image: url('img/photos/user-extra-03.jpg');">
-                        <div class="user-list-extra-item__icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="img-fluid" viewBox="0 0 64 64">
-                                <path class="icon-lock" d="M36.22 32.86a6.27 6.27 0 00-4.5-1.8c-3.4.1-6.2 3-6.1 6.4 0 1.8.9 3.5 2.2 4.6v4.4c-.1 2.2 1.6 4.1 3.8 4.2s4.1-1.6 4.2-3.8v-4.8c2.6-2.2 3-6.2.8-8.8-.1-.1-.3-.2-.4-.4zm-2 7.4c-.5.4-.8 1.1-.8 1.7v4.5c0 .8-.7 1.5-1.5 1.5s-1.5-.7-1.5-1.5v-4.4c0-.7-.3-1.3-.8-1.7-.9-.7-1.5-1.9-1.4-3.1.1-2 1.7-3.5 3.6-3.6h.1c2.1 0 3.8 1.7 3.8 3.7-.1 1.1-.6 2.2-1.5 2.9z"/>
-                                <path class="icon-lock" d="M48.04 25.4v-9.1c0-9-7.3-16.2-16.2-16.3-9 0-16.2 7.3-16.3 16.2v9.1a21.9 21.9 0 00-6 11.3c-.1.7.3 1.3 1 1.5.7.1 1.3-.3 1.5-1 2.3-10.9 13-18 23.9-15.7s18 13 15.7 23.9c-2.3 10.9-13 18-23.9 15.7-7.9-1.6-14.1-7.8-15.7-15.7-.2-.7-.8-1.1-1.5-.9-.7.1-1.1.8-1 1.4a22.7 22.7 0 0026.8 17.7 22.55 22.55 0 0017.7-26.7c-.9-4.3-3-8.2-6-11.4zm-8.5-5.5c-5-1.8-10.5-1.8-15.5 0v-3.6a7.7 7.7 0 0115.4 0v3.6h.1zm6 3.3c-1.1-.8-2.3-1.6-3.5-2.2v-4.7c.1-5.7-4.4-10.3-10.1-10.4-5.7 0-10.3 4.5-10.4 10.2v5c-1.2.6-2.4 1.3-3.5 2.2v-6.9c0-7.6 6.2-13.7 13.7-13.7 7.6 0 13.7 6.2 13.7 13.7l.1 6.8z"/>
-                                <path class="icon-lock" d="M48.72 39.98c-.5-.5-1.3-.5-1.8 0s-.5 1.3 0 1.8 1.3.5 1.8 0c.2-.2.4-.6.4-.9 0-.4-.2-.7-.4-.9zM48.67 36.83c-1.8-7.8-8.8-13.3-16.8-13.3-.7 0-1.2.6-1.2 1.2 0 .7.6 1.2 1.2 1.2 6.8 0 12.8 4.7 14.3 11.3.2.7.8 1.1 1.5.9.7.1 1.1-.6 1-1.3zM10.4 39.58c-.7 0-1.3.6-1.3 1.2 0 .7.6 1.3 1.2 1.3h.1c.7 0 1.3-.6 1.3-1.2-.1-.7-.6-1.3-1.3-1.3z"/>
-                            </svg>
+                    <div class="user-list-extra-item__inf">
+                        <div class="user-list-extra-item__name">Elizabeth, 32</div>
+                        <div class="user-list-extra-item__loc">Tokio (5000 km)</div>
+                    </div>
+                </div><div class="user-list-extra-item">
+                    <div class="user-list-extra-item__pic">
+                        <div class="user-list-extra-item__img" style="background-image: url('img/photos/user-extra-04.jpg');">
+                            <div class="user-list-extra-item__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0" y="0" version="1.1" viewBox="0 0 64 64" xml:space="preserve">
+                                        <g transform="translate(-66.27 -5.99)">
+                                            <path class="icon-lock" d="M119 33.1l-.3-.1v-6.5c0-11.3-9.2-20.5-20.5-20.5a20.5 20.5 0 00-20.4 20.5V33l-.3.1a5.4 5.4 0 00-3.5 5v7.6C74 59.1 84.9 70 98.3 70s24.3-10.9 24.3-24.3v-7.6c0-2.2-1.5-4.2-3.6-5zm-38.2-.7v-5.9C80.8 16.8 88.6 9 98.3 9s17.5 7.8 17.5 17.5v6.3h-4.6v-6.3c0-7.1-5.8-12.9-12.9-12.9-7.1 0-12.9 5.8-12.9 12.9v6.3h-4.6v-.4zm27.3-5.9v6.3H88.4v-6.3c0-5.4 4.4-9.9 9.9-9.9 5.4 0 9.8 4.4 9.8 9.9zm11.4 19.2a21.25 21.25 0 11-42.5 0v-7.6c0-1.3 1-2.3 2.3-2.3h37.9c1.3 0 2.3 1 2.3 2.3v7.6z"/>
+                                            <path class="icon-lock" d="M98.3 40.6a5.8 5.8 0 00-1.9 11.3l.3.1v6.9c0 .9.7 1.7 1.7 1.7.9 0 1.7-.7 1.7-1.7V52l.3-.1c3-1.1 4.6-4.4 3.5-7.4-1-2.3-3.2-3.9-5.6-3.9zm0 8.3c-1.4 0-2.5-1.1-2.5-2.5s1.1-2.5 2.5-2.5 2.5 1.1 2.5 2.5-1.2 2.5-2.5 2.5z"/>
+                                        </g>
+                                    </svg>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="user-list-extra-item__inf">
-                    <div class="user-list-extra-item__name">Jennifer, 24</div>
-                    <div class="user-list-extra-item__loc">New York&nbsp;<br class="user-list-extra-item__br">(1000 km)</div>
-                </div>
-            </div>
-            <div class="user-list-extra-item">
-                <div class="user-list-extra-item__pic">
-                    <div class="user-list-extra-item__img" style="background-image: url('img/photos/user-extra-04.jpg');">
-                        <div class="user-list-extra-item__icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="img-fluid" viewBox="0 0 64 64">
-                                <path class="icon-lock" d="M36.22 32.86a6.27 6.27 0 00-4.5-1.8c-3.4.1-6.2 3-6.1 6.4 0 1.8.9 3.5 2.2 4.6v4.4c-.1 2.2 1.6 4.1 3.8 4.2s4.1-1.6 4.2-3.8v-4.8c2.6-2.2 3-6.2.8-8.8-.1-.1-.3-.2-.4-.4zm-2 7.4c-.5.4-.8 1.1-.8 1.7v4.5c0 .8-.7 1.5-1.5 1.5s-1.5-.7-1.5-1.5v-4.4c0-.7-.3-1.3-.8-1.7-.9-.7-1.5-1.9-1.4-3.1.1-2 1.7-3.5 3.6-3.6h.1c2.1 0 3.8 1.7 3.8 3.7-.1 1.1-.6 2.2-1.5 2.9z"/>
-                                <path class="icon-lock" d="M48.04 25.4v-9.1c0-9-7.3-16.2-16.2-16.3-9 0-16.2 7.3-16.3 16.2v9.1a21.9 21.9 0 00-6 11.3c-.1.7.3 1.3 1 1.5.7.1 1.3-.3 1.5-1 2.3-10.9 13-18 23.9-15.7s18 13 15.7 23.9c-2.3 10.9-13 18-23.9 15.7-7.9-1.6-14.1-7.8-15.7-15.7-.2-.7-.8-1.1-1.5-.9-.7.1-1.1.8-1 1.4a22.7 22.7 0 0026.8 17.7 22.55 22.55 0 0017.7-26.7c-.9-4.3-3-8.2-6-11.4zm-8.5-5.5c-5-1.8-10.5-1.8-15.5 0v-3.6a7.7 7.7 0 0115.4 0v3.6h.1zm6 3.3c-1.1-.8-2.3-1.6-3.5-2.2v-4.7c.1-5.7-4.4-10.3-10.1-10.4-5.7 0-10.3 4.5-10.4 10.2v5c-1.2.6-2.4 1.3-3.5 2.2v-6.9c0-7.6 6.2-13.7 13.7-13.7 7.6 0 13.7 6.2 13.7 13.7l.1 6.8z"/>
-                                <path class="icon-lock" d="M48.72 39.98c-.5-.5-1.3-.5-1.8 0s-.5 1.3 0 1.8 1.3.5 1.8 0c.2-.2.4-.6.4-.9 0-.4-.2-.7-.4-.9zM48.67 36.83c-1.8-7.8-8.8-13.3-16.8-13.3-.7 0-1.2.6-1.2 1.2 0 .7.6 1.2 1.2 1.2 6.8 0 12.8 4.7 14.3 11.3.2.7.8 1.1 1.5.9.7.1 1.1-.6 1-1.3zM10.4 39.58c-.7 0-1.3.6-1.3 1.2 0 .7.6 1.3 1.2 1.3h.1c.7 0 1.3-.6 1.3-1.2-.1-.7-.6-1.3-1.3-1.3z"/>
-                            </svg>
-                        </div>
+                    <div class="user-list-extra-item__inf">
+                        <div class="user-list-extra-item__name">Elizabeth, 32</div>
+                        <div class="user-list-extra-item__loc">Tokio (5000 km)</div>
                     </div>
                 </div>
-                <div class="user-list-extra-item__inf">
-                    <div class="user-list-extra-item__name">Jennifer, 24</div>
-                    <div class="user-list-extra-item__loc">New York&nbsp;<br class="user-list-extra-item__br">(1000 km)</div>
                 </div>
             </div>
         </div>

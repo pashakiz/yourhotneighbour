@@ -458,8 +458,32 @@ textarea.form-control {
     }
   }
   &.btn_2 {
+    width: calc(100% - 28px);
+    font-size: 11px;
+    padding: 8px 10px 6px;
+    height: 25px;
+    &::after {
+      width: 25px;
+      height: 25px;
+      right: -29px;
+    }
     &:hover {
       color: #fff;
+    }
+    @media (min-width: 768px) {
+      letter-spacing: 2px;
+    }
+    @media (min-width: 992px) {
+      width: calc(100% - 71px);
+      font-size: 21px;
+      letter-spacing: 3px;
+      padding: 20px 21px;
+      height: 62px;
+      &::after {
+        width: 62px;
+        height: 62px;
+        right: -72px;
+      }
     }
   }
   &.btn_3 {

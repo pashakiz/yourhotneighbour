@@ -153,16 +153,16 @@
 
   &.compatibility_login {
     .compatibility__title {
-      margin-top: 8px;
-      font-size: 12px;
+      margin-top: 17px;
+      font-size: 13px;
       @media (min-width: $user_list_item_breakpoint) {
-        margin-top: 13px;
+        margin-top: 24px;
         font-size: 18px;
       }
     }
     .compatibility__progress {
-      width: 37px;
-      height: 37px;
+      width: 51px;
+      height: 17px;
       margin: auto;
       @media (min-width: 992px) {
         width: 71px;
@@ -171,9 +171,9 @@
     }
     .compatibility__chart {
       +.compatibility__chart {
-        margin-left: 15px;
+        margin-left: 10px;
         @media (min-width: $user_list_item_breakpoint) {
-          margin-left: 18px;
+          margin-left: 19px;
         }
       }
     }

@@ -241,6 +241,11 @@
   @media (min-width: 1920px) {
     height: 987px;
   }
+  &.login {
+    @media (min-width: 1200px) {
+      margin-bottom: 160px;
+    }
+  }
 }
 
 .header__info {

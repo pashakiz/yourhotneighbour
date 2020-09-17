@@ -69,14 +69,9 @@ $(function() {
             loop: true,
             dots: false,
             items: 4,
+            margin: 24,
             autoWidth: true,
             responsive:{
-                768:{
-                    margin: 5
-                },
-                992:{
-                    margin: 10
-                },
                 1200:{
                     margin: 25
                 },

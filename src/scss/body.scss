@@ -21,12 +21,6 @@ body {
       max-width: 1670px;
     }
   }
-  &.container_profile {
-    position: relative;
-    @media (min-width: 1500px) {
-      max-width: 1410px;
-    }
-  }
   &.container_index {
     @media (min-width: 1920px) {
       max-width: 1535px;

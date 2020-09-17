@@ -1,7 +1,7 @@
 $container-xxl:             1427px;
 $container-xxxl:            1640px;
 $body_bg_color:             #FFF7EB;
-/**/$logo_main_color:           #D3B7D6;
+$logo_main_color:           #D3B7D6; /**/
 $btn_bg_color:              #FF445A;
 $btn_hover_bg_color:        #EA2F45;
 $btn2_bg_color:             #E9E0D3;
@@ -19,8 +19,8 @@ $body_mb_mob:               100px;
 $font_family2:              "IvyMode", serif;
 $font_family3:              "Love", serif;
 $link_txt_family:           $font_family;
-/**/$link_color:                #828282;
-/**/$link_hover_color:          #555555;
+$link_color:                #828282;/**/
+$link_hover_color:          #555555;/**/
 $link2_color:               #272727;
 $link2_hover_color:         $link2_color;
 $link3_color:               $font_color2;
@@ -113,6 +113,6 @@ $radio_bg_icon:              "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org
 }
 
 //User List page wider
-/**/$user_list_wider:           160px;
+$user_list_wider:           160px;/**/
 $user_list_item_breakpoint: 992px;
 $user_list_title_color:     $font_color2;

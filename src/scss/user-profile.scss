@@ -270,5 +270,10 @@
       margin-bottom: 125px;
     }
   }
-  &.bg-wave_login {}
+  &.bg-wave_login {
+    padding-top: 90px;
+    @media (min-width: 992px) {
+      padding-top: 15px;
+    }
+  }
 }

@@ -64,6 +64,28 @@ $(function() {
             }
         });
 
+        //slider (Profile gallery) for desktop
+        $('.owl-carousel.user-list_slider').owlCarousel({
+            loop: true,
+            dots: false,
+            items: 4,
+            autoWidth: true,
+            responsive:{
+                768:{
+                    margin: 5
+                },
+                992:{
+                    margin: 10
+                },
+                1200:{
+                    margin: 25
+                },
+                1410:{
+                    margin: 49
+                }
+            }
+        });
+
         //gallery on desktop
         $('.user-profile-gallery').on('click', '.user-profile-gallery__item', function(){
             let url = $(this).css('background-image');

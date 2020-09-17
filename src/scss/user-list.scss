@@ -15,6 +15,12 @@
   }
 }
 
+.user-list-item_pt {
+  @media (min-width: 1920px) {
+    top: 22px;
+  }
+}
+
 .user-list-item {
   width: 290px;
   display: flex;
